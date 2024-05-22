@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1349" tag="" content="No D:/Labs/3sem/FPGA/lab3_z3/lab3_z2/ex_sol1/ex_sol1.aps file found." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: add_files ./source/lab3_z2.c" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;./source/lab3_z2.c&apos; to the project" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: set_top lab3_z2" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: add_files -tb ./source/lab3_z2_test.c" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding test bench file &apos;./source/lab3_z2_test.c&apos; to the project" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1510]" key="HLS 200-1510" tag="" content="Running: open_solution -reset sol1" resolution=""/>
+</Messages>

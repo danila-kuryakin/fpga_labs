@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1670746418081">
+  <ports id="1" name="in_r" type="PortType" originalName="in" coreName="RAM" coreId="1031040613" bitwidth="32" iftype="IfTypeRegister" arraysize="16384">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="out1" type="PortType" originalName="out1" coreName="RAM" coreId="1031040613" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="16384">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="3" name="out2" type="PortType" originalName="out2" coreName="RAM" coreId="1031040613" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="16384">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="32" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="34" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="35" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="38" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="41" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="42" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="43" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="44" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="47" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="48" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="49" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@ports.1"/>
+  <edges id="51" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="52" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="53" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="54" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@ports.2"/>
+  <edges id="56" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="57" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="58" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="59" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="60" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="61" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="76" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="77" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="78" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.6"/>
+  <blocks id="7" name="block_7" type="BlockType">
+    <controlOutputObjs>block_14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="83452984" bitwidth="15" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="i_write_ln8" lineNumber="8" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="1629502780" contextFuncName="split" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="br_ln8" lineNumber="8" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="3770002949" contextFuncName="split" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <controlInputObjs>block_14</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="./source/lab5_z1.c">
+      <validLinenumbers>8</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="14" name="block_14" type="BlockType">
+    <controlInputObjs>block_7</controlInputObjs>
+    <controlInputObjs>.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_26</controlOutputObjs>
+    <controlOutputObjs>.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i_1" lineNumber="8" originalName="i" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="0" contextFuncName="split" bitwidth="15" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="zext_ln8" lineNumber="8" fileName="./source/lab5_z1.c" fileDirectory=".." rtlName="zext_ln8_fu_77_p1" coreId="538976288" contextFuncName="split" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="icmp_ln8" lineNumber="8" fileName="./source/lab5_z1.c" fileDirectory=".." rtlName="icmp_ln8_fu_82_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="split" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.26" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="add_ln8" lineNumber="8" fileName="./source/lab5_z1.c" fileDirectory=".." rtlName="add_ln8_fu_88_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="split" bitwidth="15" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.14" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln8" lineNumber="8" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="606108020" contextFuncName="split" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>block_26</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="./source/lab5_z1.c">
+      <validLinenumbers>8</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="24" name=".split" type="BlockType">
+    <controlInputObjs>block_14</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="in_addr" lineNumber="11" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="0" contextFuncName="split" bitwidth="14" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="11" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="in_load" lineNumber="11" fileName="./source/lab5_z1.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="split" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="11" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="out1_addr" lineNumber="11" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="1598169149" contextFuncName="split" bitwidth="14" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="11" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>out1</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="out1_addr_write_ln11" lineNumber="11" fileName="./source/lab5_z1.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="split" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="11" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="out2_addr" lineNumber="12" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="1852383264" contextFuncName="split" bitwidth="14" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="12" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>out2</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="out2_addr_write_ln12" lineNumber="12" fileName="./source/lab5_z1.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="split" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="12" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="i_write_ln8" lineNumber="8" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="1027416112" contextFuncName="split" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.61" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln0" coreId="1597071201" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_14</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="./source/lab5_z1.c">
+      <validLinenumbers>11</validLinenumbers>
+      <validLinenumbers>12</validLinenumbers>
+      <validLinenumbers>8</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="26" name="block_26" type="BlockType">
+    <controlInputObjs>block_14</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln14" lineNumber="14" fileName="./source/lab5_z1.c" fileDirectory=".." coreId="1852121120" contextFuncName="split" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab5_z1.c" linenumber="14" fileDirectory="D:\Labs\3sem\FPGA\lab5_z1" functionName="split"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="./source/lab5_z1.c">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="i_reg_99">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln8_reg_106">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_reg_115">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <expressionNodes realName="in_addr_gep_fu_28">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_24">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out1_addr_gep_fu_41">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln8_fu_88">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln8_fu_77">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln8_fu_82">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out2_addr_gep_fu_55">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln8_store_fu_94">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_1_load_fu_74">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln8_store_fu_69">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="in_r">
+    <nodeIds>17</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="out1">
+    <nodeIds>19</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="out2">
+    <nodeIds>21</nodeIds>
+  </memoryPorts>
+  <ioPorts name="in_r(p0)">
+    <contents name="load">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out1(p0)">
+    <contents name="store">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out2(p0)">
+    <contents name="store">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="2" latency="2"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="2"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="split" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="32769" mMaxLatency="32769">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>7</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="L1" mII="-1" mDepth="-1" mMinTripCount="16384" mMaxTripCount="16384" mMinLatency="32768" mMaxLatency="32768" mType="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>24</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

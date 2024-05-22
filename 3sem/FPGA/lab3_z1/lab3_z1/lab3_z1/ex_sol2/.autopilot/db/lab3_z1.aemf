@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1666998505334">
+  <ports id="1" name="inA" type="PortType" originalName="inA" coreId="1953391988" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="inB" type="PortType" originalName="inB" coreId="3018709127" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="inC" type="PortType" originalName="inC" coreId="1953391988" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="res" type="PortType" originalName="res" coreId="3789714224" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="14" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="29" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="31" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="32" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="35" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="36" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="37" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="39" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="40" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="41" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="44" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.3"/>
+  <edges id="45" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges source_obj="//@blocks.0/@node_objs.9" sink_obj="//@ports.4"/>
+  <blocks id="26" name="lab3_z1" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="inB_read" lineNumber="3" originalName="inB" fileName="./source/lab3_z1.c" fileDirectory=".." coreId="1818849391" contextFuncName="lab3_z1" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="3" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>inB</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="inA_read" lineNumber="3" originalName="inA" fileName="./source/lab3_z1.c" fileDirectory=".." coreId="827547248" contextFuncName="lab3_z1" bitwidth="16" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="3" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>inA</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="sext_ln6" lineNumber="6" fileName="./source/lab3_z1.c" fileDirectory=".." coreId="1818849391" contextFuncName="lab3_z1" bitwidth="32" opcode="sext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="6" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="inC_read" lineNumber="6" fileName="./source/lab3_z1.c" fileDirectory=".." coreId="1987789712" contextFuncName="lab3_z1" bitwidth="16" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="6" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>inC</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="sext_ln6_1" lineNumber="6" fileName="./source/lab3_z1.c" fileDirectory=".." coreId="1988478696" contextFuncName="lab3_z1" bitwidth="32" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="6" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="temp" lineNumber="6" originalName="temp" fileName="./source/lab3_z1.c" fileDirectory=".." rtlName="mul_mul_16s_16s_32_4_1_U1" coreName="DSP48" implIndex="dsp" control="no" opType="mul" coreId="119" contextFuncName="lab3_z1" bitwidth="32" opcode="mul" nodeLatency="3" m_display="0" m_delay="2.15" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="6" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="sext_ln7" lineNumber="7" fileName="./source/lab3_z1.c" fileDirectory=".." rtlName="sext_ln7_fu_63_p1" coreId="1987789712" contextFuncName="lab3_z1" bitwidth="32" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="7" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="add_ln7" lineNumber="7" fileName="./source/lab3_z1.c" fileDirectory=".." rtlName="res_int_regslice" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="lab3_z1" bitwidth="32" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.7" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="7" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="res_write_ln7" lineNumber="7" fileName="./source/lab3_z1.c" fileDirectory=".." coreId="2404427512" contextFuncName="lab3_z1" opcode="write" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="7" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>res</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln8" lineNumber="8" fileName="./source/lab3_z1.c" fileDirectory=".." coreId="1400032544" contextFuncName="lab3_z1" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab3_z1.c" linenumber="8" fileDirectory="D:\Labs\3sem\FPGA\lab3_z1\lab3_z1" functionName="lab3_z1"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="./source/lab3_z1.c">
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>6</validLinenumbers>
+      <validLinenumbers>7</validLinenumbers>
+      <validLinenumbers>8</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="add_ln7_reg_98">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln6_reg_84">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="inB_read_reg_79">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="temp_reg_94">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln6_1_reg_89">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln7_fu_66">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln7_fu_63">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln6_1_fu_59">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln6_fu_55">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_72">
+    <nodeIds>21</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="inC_read_read_fu_42">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_48">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="inA_read_read_fu_36">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="inB_read_read_fu_30">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioPorts name="inA">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="inB">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="inC">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res">
+    <contents name="write">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="4" latency="4"/>
+    </states>
+    <states id="2">
+      <operations id="21" stage="3" latency="4"/>
+    </states>
+    <states id="3">
+      <operations id="21" stage="2" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="21" stage="1" latency="4"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="2"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="lab3_z1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

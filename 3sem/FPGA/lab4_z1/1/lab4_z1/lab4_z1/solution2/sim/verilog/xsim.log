@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# xsim v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Nov  8 10:49:57 2022
+# Process ID: 968
+# Current directory: E:/Xilinx_trn/lab4_z1/lab4_z1/solution2/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/lab4_z1/xsim_script.tcl}
+# Log file: E:/Xilinx_trn/lab4_z1/lab4_z1/solution2/sim/verilog/xsim.log
+# Journal file: E:/Xilinx_trn/lab4_z1/lab4_z1/solution2/sim/verilog\xsim.jou
+# Running On: molnevia-Nat, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 16948 MB
+#-----------------------------------------------------------
+source xsim.dir/lab4_z1/xsim_script.tcl
+# xsim {lab4_z1} -view {{lab4_z1_dataflow_ana.wcfg}} -tclbatch {lab4_z1.tcl} -protoinst {lab4_z1.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file lab4_z1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_lab4_z1_top/AESL_inst_lab4_z1//AESL_inst_lab4_z1_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_lab4_z1_top/AESL_inst_lab4_z1/grp_lab4_z1_Pipeline_L1_fu_72/grp_lab4_z1_Pipeline_L1_fu_72_activity
+Time resolution is 1 ps
+open_wave_config lab4_z1_dataflow_ana.wcfg
+source lab4_z1.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_lab4_z1_top/AESL_inst_lab4_z1/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinoutgroup]
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/resultVecror_arr_q0 -into $return_group -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/resultVecror_arr_d0 -into $return_group -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/resultVecror_arr_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/resultVecror_arr_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/resultVecror_arr_address0 -into $return_group -radix hex
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/secondVector_arr_q0 -into $return_group -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/secondVector_arr_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/secondVector_arr_address0 -into $return_group -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/firstVector_arr_q0 -into $return_group -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/firstVector_arr_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/firstVector_arr_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_start -into $blocksiggroup
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_done -into $blocksiggroup
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_idle -into $blocksiggroup
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_lab4_z1_top/AESL_inst_lab4_z1/ap_clk -into $clockgroup
+## save_wave_config lab4_z1.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [0.00%] @ "125000"
+// RTL Simulation : 1 / 2 [100.00%] @ "595000"
+// RTL Simulation : 2 / 2 [100.00%] @ "1055000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1115 ns : File "E:/Xilinx_trn/lab4_z1/lab4_z1/solution2/sim/verilog/lab4_z1.autotb.v" Line 325
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Nov  8 10:49:59 2022...

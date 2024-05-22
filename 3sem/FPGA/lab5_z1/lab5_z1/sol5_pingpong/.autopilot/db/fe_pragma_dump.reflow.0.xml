@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="./source/lab5_z1.c" line="16" pragmaType="dataflow" parentfunction="foo_m" disable_start_propagation="0"/>
+<pragma file="./source/lab5_z1.c" line="38" pragmaType="pipeline" parentfunction="foo_m" off="1" ii="0" rewind="0" style=""/>
+<pragma file="./source/lab5_z1.c" line="31" pragmaType="pipeline" parentfunction="foo_m" off="1" ii="0" rewind="0" style=""/>
+<pragma file="./source/lab5_z1.c" line="21" pragmaType="pipeline" parentfunction="foo_m" off="1" ii="0" rewind="0" style=""/>
+<pragma file="./source/lab5_z1.c" line="8" pragmaType="pipeline" parentfunction="split" off="1" ii="0" rewind="0" style=""/>
+</pragmas>

@@ -1,0 +1,107 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "lab3_z1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_hs",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "res"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lab3_z1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_hs",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "inB"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lab3_z1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_hs",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "inA"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lab3_z1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_hs",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "inC"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lab3_z1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_ctrl_chain",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "return"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lab3_z1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "lab3_z1"
+              }]
+          }
+        }
+      ]
+    }]}

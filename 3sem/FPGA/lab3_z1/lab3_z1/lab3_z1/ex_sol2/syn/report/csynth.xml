@@ -1,0 +1,544 @@
+<profile>
+    <ReportVersion>
+        <Version>2021.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xa7a12t-csg325-1Q</Part>
+        <TopModelName>lab3_z1</TopModelName>
+        <TargetClockPeriod>8.00</TargetClockPeriod>
+        <ClockUncertainty>1.00</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.702</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>4</Best-caseLatency>
+            <Average-caseLatency>4</Average-caseLatency>
+            <Worst-caseLatency>4</Worst-caseLatency>
+            <Best-caseRealTimeLatency>32.000 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>32.000 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>32.000 ns</Worst-caseRealTimeLatency>
+            <Interval-min>5</Interval-min>
+            <Interval-max>5</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>1</DSP>
+            <FF>54</FF>
+            <LUT>113</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>40</BRAM_18K>
+            <DSP>40</DSP>
+            <FF>16000</FF>
+            <LUT>8000</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_local_block</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_local_deadlock</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_continue</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_return</name>
+            <Object>lab3_z1</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inA</name>
+            <Object>inA</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inA_ap_vld</name>
+            <Object>inA</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inA_ap_ack</name>
+            <Object>inA</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inB</name>
+            <Object>inB</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inB_ap_vld</name>
+            <Object>inB</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inB_ap_ack</name>
+            <Object>inB</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inC</name>
+            <Object>inC</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inC_ap_vld</name>
+            <Object>inC</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inC_ap_ack</name>
+            <Object>inC</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>res</name>
+            <Object>res</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig>register</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>res_ap_vld</name>
+            <Object>res</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig>register</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>res_ap_ack</name>
+            <Object>res</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig>register</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>lab3_z1</ModuleName>
+            <BindInstances>mul_mul_16s_16s_32_4_1_U1 res_int_regslice</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>lab3_z1</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>8.00</TargetClockPeriod>
+                    <ClockUncertainty>1.00</ClockUncertainty>
+                    <EstimatedClockPeriod>2.702</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>32.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>32.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>32.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>5</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>40</AVAIL_DSP>
+                    <UTIL_DSP>2</UTIL_DSP>
+                    <FF>54</FF>
+                    <AVAIL_FF>16000</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>113</LUT>
+                    <AVAIL_LUT>8000</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>40</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_1_U1" SOURCE="./source/lab3_z1.c:6" URAM="0" VARIABLE="temp"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="res_int_regslice" SOURCE="./source/lab3_z1.c:7" URAM="0" VARIABLE="add_ln7"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="inA" index="0" direction="in" srcType="short" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="inA" name="inA" usage="data" direction="in"/>
+                <hwRef type="port" interface="inA_ap_vld" name="inA_ap_vld" usage="control" direction="in"/>
+                <hwRef type="port" interface="inA_ap_ack" name="inA_ap_ack" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="inB" index="1" direction="in" srcType="short" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="inB" name="inB" usage="data" direction="in"/>
+                <hwRef type="port" interface="inB_ap_vld" name="inB_ap_vld" usage="control" direction="in"/>
+                <hwRef type="port" interface="inB_ap_ack" name="inB_ap_ack" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="inC" index="2" direction="in" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="inC" name="inC" usage="data" direction="in"/>
+                <hwRef type="port" interface="inC_ap_vld" name="inC_ap_vld" usage="control" direction="in"/>
+                <hwRef type="port" interface="inC_ap_ack" name="inC_ap_ack" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="res" index="3" direction="out" srcType="int*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="res" name="res" usage="data" direction="out"/>
+                <hwRef type="port" interface="res_ap_vld" name="res_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="res_ap_ack" name="res_ap_ack" usage="control" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <ReturnValue ReturnValueName="srcType">int</ReturnValue>
+    <ReturnValue ReturnValueName="srcSize">32</ReturnValue>
+    <ReturnValue ReturnValueName="hwRefs" type="port" interface="ap_return" name="ap_return" usage="data" direction="out"/>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_continue">continue</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_continue</port>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_return" type="data" busTypeName="data" protocol="ap_ctrl_chain" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ap_return">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_return</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="inA" type="data" busTypeName="data" protocol="ap_hs" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="inA">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>inA</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_hs" register_option="0" argName="inA"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="inB" type="data" busTypeName="data" protocol="ap_hs" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="inB">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>inB</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_hs" register_option="0" argName="inB"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="inC" type="data" busTypeName="data" protocol="ap_hs" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="inC">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>inC</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_hs" register_option="0" argName="inC"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="res" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="res">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>res</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_hs" register_option="0" argName="res"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="REGISTER">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="ap_return">, 32</column>
+                    <column name="inA">ap_hs, 16</column>
+                    <column name="inB">ap_hs, 16</column>
+                    <column name="inC">ap_hs, 16</column>
+                    <column name="res">ap_hs, 32</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_chain, ap_continue ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="inA">in, short</column>
+                    <column name="inB">in, short</column>
+                    <column name="inC">in, short*</column>
+                    <column name="res">out, int*</column>
+                    <column name="return">out, int</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="inA">inA, port</column>
+                    <column name="inA">inA_ap_vld, port</column>
+                    <column name="inA">inA_ap_ack, port</column>
+                    <column name="inB">inB, port</column>
+                    <column name="inB">inB_ap_vld, port</column>
+                    <column name="inB">inB_ap_ack, port</column>
+                    <column name="inC">inC, port</column>
+                    <column name="inC">inC_ap_vld, port</column>
+                    <column name="inC">inC_ap_ack, port</column>
+                    <column name="res">res, port</column>
+                    <column name="res">res_ap_vld, port</column>
+                    <column name="res">res_ap_ack, port</column>
+                    <column name="return">ap_return, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <PragmaReport>
+        <Pragma type="interface" location="./source/lab3_z1.c:5" status="valid" parentFunction="lab3_z1" variable="inA" isDirective="1" options="ap_hs port=inA"/>
+        <Pragma type="interface" location="./source/lab3_z1.c:5" status="valid" parentFunction="lab3_z1" variable="inB" isDirective="1" options="ap_hs port=inB"/>
+        <Pragma type="interface" location="./source/lab3_z1.c:5" status="valid" parentFunction="lab3_z1" variable="inC" isDirective="1" options="ap_hs port=inC"/>
+        <Pragma type="interface" location="./source/lab3_z1.c:5" status="valid" parentFunction="lab3_z1" variable="res" isDirective="1" options="ap_hs port=res"/>
+        <Pragma type="interface" location="./source/lab3_z1.c:5" status="valid" parentFunction="lab3_z1" variable="return" isDirective="1" options="ap_ctrl_chain port=return"/>
+    </PragmaReport>
+</profile>
+

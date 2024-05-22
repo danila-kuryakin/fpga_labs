@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_108_p2" SOURCE="lab1_z2/source/lab1_z2.c:12" VARIABLE="add_ln12" MODULE="lab1_z2" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln8_fu_131_p2" SOURCE="lab1_z2/source/lab1_z2.c:8" VARIABLE="icmp_ln8" MODULE="lab1_z2" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln8_fu_137_p2" SOURCE="lab1_z2/source/lab1_z2.c:8" VARIABLE="add_ln8" MODULE="lab1_z2" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_1_fu_152_p2" SOURCE="lab1_z2/source/lab1_z2.c:12" VARIABLE="add_ln12_1" MODULE="lab1_z2" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="y_fu_161_p2" SOURCE="lab1_z2/source/lab1_z2.c:12" VARIABLE="y" MODULE="lab1_z2" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

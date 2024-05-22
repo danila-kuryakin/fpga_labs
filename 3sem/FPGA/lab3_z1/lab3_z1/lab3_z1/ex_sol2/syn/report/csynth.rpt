@@ -1,0 +1,115 @@
+
+
+================================================================
+== Synthesis Summary Report of 'lab3_z1'
+================================================================
++ General Information: 
+    * Date:           Sat Oct 29 02:08:25 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        lab3_z1
+    * Solution:       ex_sol2 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xa7a12t-csg325-1Q
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |  Modules  | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |        |          |          |     |
+    |  & Loops  | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT   | URAM|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |+ lab3_z1  |     -|  4.30|        4|  32.000|         -|        5|     -|        no|     -|  1 (2%)|  54 (~0%)|  113 (1%)|    -|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-----------+-------+----------+
+| Interface | Mode  | Bitwidth |
++-----------+-------+----------+
+| ap_return |       | 32       |
+| inA       | ap_hs | 16       |
+| inB       | ap_hs | 16       |
+| inC       | ap_hs | 16       |
+| res       | ap_hs | 32       |
++-----------+-------+----------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------------------------------------------+
+| Interface | Type          | Ports                                         |
++-----------+---------------+-----------------------------------------------+
+| ap_clk    | clock         | ap_clk                                        |
+| ap_rst    | reset         | ap_rst                                        |
+| ap_ctrl   | ap_ctrl_chain | ap_continue ap_done ap_idle ap_ready ap_start |
++-----------+---------------+-----------------------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| inA      | in        | short    |
+| inB      | in        | short    |
+| inC      | in        | short*   |
+| res      | out       | int*     |
+| return   | out       | int      |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| inA      | inA          | port    |
+| inA      | inA_ap_vld   | port    |
+| inA      | inA_ap_ack   | port    |
+| inB      | inB          | port    |
+| inB      | inB_ap_vld   | port    |
+| inB      | inB_ap_ack   | port    |
+| inC      | inC          | port    |
+| inC      | inC_ap_vld   | port    |
+| inC      | inC_ap_ack   | port    |
+| res      | res          | port    |
+| res      | res_ap_vld   | port    |
+| res      | res_ap_ack   | port    |
+| return   | ap_return    | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------+-----+--------+----------+-----+--------+---------+
+| Name                        | DSP | Pragma | Variable | Op  | Impl   | Latency |
++-----------------------------+-----+--------+----------+-----+--------+---------+
+| + lab3_z1                   | 1   |        |          |     |        |         |
+|   mul_mul_16s_16s_32_4_1_U1 | 1   |        | temp     | mul | dsp    | 3       |
+|   res_int_regslice          | -   |        | add_ln7  | add | fabric | 0       |
++-----------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------+------------------------------+
+| Type      | Options                   | Location                     |
++-----------+---------------------------+------------------------------+
+| interface | ap_hs port=inA            | DIRECTIVE in lab3_z1, inA    |
+| interface | ap_hs port=inB            | DIRECTIVE in lab3_z1, inB    |
+| interface | ap_hs port=inC            | DIRECTIVE in lab3_z1, inC    |
+| interface | ap_hs port=res            | DIRECTIVE in lab3_z1, res    |
+| interface | ap_ctrl_chain port=return | DIRECTIVE in lab3_z1, return |
++-----------+---------------------------+------------------------------+
+
+

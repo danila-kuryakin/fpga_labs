@@ -1,0 +1,41 @@
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Thu Oct 06 20:30:07 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab1_z2'
+Sourcing Tcl script 'D:/Labs/3sem/FPGA/lab1_z2/lab1_z2/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project lab1_z2 
+INFO: [HLS 200-10] Opening project 'D:/Labs/3sem/FPGA/lab1_z2/lab1_z2'.
+INFO: [HLS 200-1510] Running: set_top lab1_z2 
+INFO: [HLS 200-1510] Running: add_files lab1_z2/source/lab1_z2.c 
+INFO: [HLS 200-10] Adding design file 'lab1_z2/source/lab1_z2.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb lab1_z2/source/lab1_z2_test.c 
+INFO: [HLS 200-10] Adding test bench file 'lab1_z2/source/lab1_z2_test.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Labs/3sem/FPGA/lab1_z2/lab1_z2/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-1611] Setting target device to 'xa7a12t-csg325-1Q'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xa7a12t-csg325-1Q 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1 
+INFO: [HLS 200-1510] Running: set_directive_top -name lab1_z2 lab1_z2 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: *** No rule to make target '../../../../source/lab1_z2_test.c', needed by 'obj/lab1_z2_test.o'.  Stop.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.249 seconds; current allocated memory: 236.957 MB.
+4
+    while executing
+"source D:/Labs/3sem/FPGA/lab1_z2/lab1_z2/solution1/csim.tcl"
+    invoked from within
+"hls::main D:/Labs/3sem/FPGA/lab1_z2/lab1_z2/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.233 seconds; peak allocated memory: 1.076 GB.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="lab3_z2.c" path="D:\Labs\3sem\FPGA\lab3_z3\source\lab3_z2.c"/>
+  </source>
+  <testbench>
+    <originFiles name="lab3_z2_test.c" path="D:\Labs\3sem\FPGA\lab3_z3\source\lab3_z2_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

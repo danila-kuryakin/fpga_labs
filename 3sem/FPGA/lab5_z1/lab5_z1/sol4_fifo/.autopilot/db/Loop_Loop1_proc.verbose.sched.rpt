@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'Loop_Loop1_proc'
+================================================================
+* Date:           Sun Dec 11 11:12:52 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        lab5_z1
+* Solution:       sol4_fifo (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xa7a12t-csg325-1Q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +------+----------+----------+------------+
+    | Clock|  Target  | Estimated| Uncertainty|
+    +------+----------+----------+------------+
+    |clk   |  10.00 ns|  8.470 ns|     1.00 ns|
+    +------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    65537|    65537|  0.655 ms|  0.655 ms|  65537|  65537|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+-------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- Loop1   |    65536|    65536|         4|          -|          -|  16384|        no|
+        +----------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.61>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %temp1, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %data_in, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%scale_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %scale"   --->   Operation 9 'read' 'scale_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.61ns)   --->   "%store_ln0 = store i15 0, i15 %i"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 11 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.87>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%i_2 = load i15 %i" [./source/lab5_z1.c:21]   --->   Operation 12 'load' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln21 = zext i15 %i_2" [./source/lab5_z1.c:21]   --->   Operation 13 'zext' 'zext_ln21' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (2.26ns)   --->   "%icmp_ln21 = icmp_eq  i15 %i_2, i15 16384" [./source/lab5_z1.c:21]   --->   Operation 14 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 2.26> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.26> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 16384, i64 16384, i64 16384"   --->   Operation 15 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (2.14ns)   --->   "%add_ln21 = add i15 %i_2, i15 1" [./source/lab5_z1.c:21]   --->   Operation 16 'add' 'add_ln21' <Predicate = true> <Delay = 2.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln21 = br i1 %icmp_ln21, void, void %foo_m_.exit.exitStub" [./source/lab5_z1.c:21]   --->   Operation 17 'br' 'br_ln21' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%data_in_addr = getelementptr i32 %data_in, i64 0, i64 %zext_ln21" [./source/lab5_z1.c:24]   --->   Operation 18 'getelementptr' 'data_in_addr' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (3.25ns)   --->   "%data_in_load = load i14 %data_in_addr" [./source/lab5_z1.c:24]   --->   Operation 19 'load' 'data_in_load' <Predicate = (!icmp_ln21)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_2 : Operation 20 [1/1] (1.61ns)   --->   "%store_ln21 = store i15 %add_ln21, i15 %i" [./source/lab5_z1.c:21]   --->   Operation 20 'store' 'store_ln21' <Predicate = (!icmp_ln21)> <Delay = 1.61>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 21 'ret' 'ret_ln0' <Predicate = (icmp_ln21)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 22 [1/2] (3.25ns)   --->   "%data_in_load = load i14 %data_in_addr" [./source/lab5_z1.c:24]   --->   Operation 22 'load' 'data_in_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+
+State 4 <SV = 3> <Delay = 8.47>
+ST_4 : Operation 23 [1/1] (8.47ns)   --->   "%mul_ln24 = mul i32 %data_in_load, i32 %scale_read" [./source/lab5_z1.c:24]   --->   Operation 23 'mul' 'mul_ln24' <Predicate = true> <Delay = 8.47> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 8.47> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 3.50>
+ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln24 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [./source/lab5_z1.c:24]   --->   Operation 24 'specloopname' 'specloopname_ln24' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 25 [1/1] (3.50ns)   --->   "%write_ln24 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %temp1, i32 %mul_ln24" [./source/lab5_z1.c:24]   --->   Operation 25 'write' 'write_ln24' <Predicate = true> <Delay = 3.50> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.50> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 16384> <FIFO>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln21 = br void" [./source/lab5_z1.c:21]   --->   Operation 26 'br' 'br_ln21' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1ns.
+
+ <State 1>: 1.61ns
+The critical path consists of the following:
+	'alloca' operation ('i') [4]  (0 ns)
+	'store' operation ('store_ln0') of constant 0 on local variable 'i' [8]  (1.61 ns)
+
+ <State 2>: 3.88ns
+The critical path consists of the following:
+	'load' operation ('i', ./source/lab5_z1.c:21) on local variable 'i' [11]  (0 ns)
+	'add' operation ('add_ln21', ./source/lab5_z1.c:21) [15]  (2.14 ns)
+	'store' operation ('store_ln21', ./source/lab5_z1.c:21) of variable 'add_ln21', ./source/lab5_z1.c:21 on local variable 'i' [23]  (1.61 ns)
+	blocking operation 0.125 ns on control path)
+
+ <State 3>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('data_in_load', ./source/lab5_z1.c:24) on array 'data_in' [20]  (3.26 ns)
+
+ <State 4>: 8.47ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln24', ./source/lab5_z1.c:24) [21]  (8.47 ns)
+
+ <State 5>: 3.5ns
+The critical path consists of the following:
+	fifo write operation ('write_ln24', ./source/lab5_z1.c:24) on port 'temp1' (./source/lab5_z1.c:24) [22]  (3.5 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

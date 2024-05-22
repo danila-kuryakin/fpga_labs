@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../source/lab2_z1_test.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Tue Oct 18 13:58:40 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab2_z1/lab2_z1/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.468 seconds; peak allocated memory: 2.504 MB.
+   Generating csim.exe
+0: 16, 2004189184, 2004189184 
+1: 7, 5040, 5040 
+2: 9, 362880, 362880 
+----------Pass!------------ 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

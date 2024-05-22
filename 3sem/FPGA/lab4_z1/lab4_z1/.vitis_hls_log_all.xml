@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab4_z1" solutionName="sol4" date="2022-12-09T09:18:17.972+0300"/>
+        <logs message="ERROR: [APCC 202-1] APCC failed." projectName="lab4_z1" solutionName="sol4" date="2022-12-09T09:18:17.941+0300"/>
+        <logs message="ERROR: [APCC 202-1] ProcessSources failed" projectName="lab4_z1" solutionName="sol4" date="2022-12-09T09:18:17.907+0300"/>
+        <logs message="ERROR: [APCC 202-10] clang compile failed: child process exited abnormally" projectName="lab4_z1" solutionName="sol4" date="2022-12-09T09:18:17.898+0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:50:40.188+0300"/>
+        <logs message="ERROR: [APCC 202-1] APCC failed." projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:50:40.110+0300"/>
+        <logs message="ERROR: [APCC 202-1] ProcessSources failed" projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:50:40.100+0300"/>
+        <logs message="ERROR: [APCC 202-10] clang compile failed: child process exited abnormally" projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:50:40.091+0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:58.333+0300"/>
+        <logs message="ERROR: [APCC 202-1] APCC failed." projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:58.297+0300"/>
+        <logs message="ERROR: [APCC 202-1] ProcessSources failed" projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:58.284+0300"/>
+        <logs message="ERROR: [APCC 202-10] clang compile failed: child process exited abnormally" projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:58.276+0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:10.909+0300"/>
+        <logs message="ERROR: [APCC 202-1] APCC failed." projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:10.849+0300"/>
+        <logs message="ERROR: [APCC 202-1] ProcessSources failed" projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:10.837+0300"/>
+        <logs message="ERROR: [APCC 202-10] clang compile failed: child process exited abnormally" projectName="lab4_z1" solutionName="solution1" date="2022-12-08T09:48:10.827+0300"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

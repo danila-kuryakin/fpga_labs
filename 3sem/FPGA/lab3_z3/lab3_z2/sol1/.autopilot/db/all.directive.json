@@ -1,0 +1,47 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "lab3_z2",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "inA_ar"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lab3_z2",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "lab3_z2"
+              }]
+          }
+        },
+        {
+          "functionName": "lab3_z2",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "lab3_z2"
+              }]
+          }
+        }
+      ]
+    }]}

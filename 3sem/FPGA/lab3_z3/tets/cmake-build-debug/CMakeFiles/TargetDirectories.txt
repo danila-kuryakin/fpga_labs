@@ -1,0 +1,3 @@
+D:/Labs/3sem/FPGA/lab3_z3/tets/cmake-build-debug/CMakeFiles/tets.dir
+D:/Labs/3sem/FPGA/lab3_z3/tets/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Labs/3sem/FPGA/lab3_z3/tets/cmake-build-debug/CMakeFiles/rebuild_cache.dir

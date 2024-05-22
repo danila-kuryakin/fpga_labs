@@ -1,0 +1,1419 @@
+INFO-FLOW: Workspace D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1 opened at Thu Sep 22 16:03:22 +0300 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xczu7ev-ffvc1156-2-e 
+Execute       create_platform xczu7ev-ffvc1156-2-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Programs/Xilinx/Vitis_HLS/2021.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Programs/Xilinx/Vivado/2021.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Command       create_platform done; 0.413 sec.
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.51 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 0.526 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+Execute     create_platform xczu7ev-ffvc1156-2-e -board  
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -hw_syn 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -pre_tcl 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 851.395 MB.
+INFO: [HLS 200-10] Analyzing design file 'source/dct.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling source/dct.c as C
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang source/dct.c -foptimization-record-file=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -std=gnu99 -fgnu89-inline -target fpga64-xilinx-mingw32 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -hls-platform-db-name=C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.c.clang.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.c.clang.err.log 
+Command       ap_eval done; 0.216 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
+Execute       set_directive_top dct -name=dct 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -hls-platform-db-name=C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/clang.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/clang.err.log 
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c std=gnu99 -target fpga  -directive=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/.systemc_flag -fix-errors D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c std=gnu99 -target fpga  -directive=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/all.directive.json -fix-errors D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert -desc constantarray_remove-assert D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: exec C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c std=gnu99 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.clang-tidy.loop-label.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.clang-tidy.loop-label.err.log 
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.xilinx-dataflow-lawyer.diag.yml D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.xilinx-dataflow-lawyer.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.xilinx-dataflow-lawyer.err.log 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.bc -hls-platform-db-name=C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.clang.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.pp.0.c.clang.err.log 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.741 seconds; current allocated memory: 1.077 GB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc -args  "D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.g.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -args D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -args D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsm_39.bc C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsm_39.bc C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsmc++_39.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 2.355 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.356 sec.
+Execute       run_link_or_opt -opt -out D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=dct -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=dct -reflow-float-conversion -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 0.848 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.849 sec.
+Execute       run_link_or_opt -out D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -args D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/lib/libfloatconversion_39.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=dct 
+Execute         ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_compile -instruction_warning_threshold 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_array_partition -throughput_driven 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=dct -mllvm -hls-db-dir -mllvm D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshhold=200000 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-disaggregate-bitwidth-threshold=4096 -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -x ir D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium > D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 0.149 sec.
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-178] Inlining function 'dct_1d' into 'dct_2d' (source/dct.c:25:0)
+INFO: [HLS 214-178] Inlining function 'read_data' into 'dct' (source/dct.c:79:0)
+INFO: [HLS 214-178] Inlining function 'dct_2d' into 'dct' (source/dct.c:79:0)
+INFO: [HLS 214-178] Inlining function 'write_data' into 'dct' (source/dct.c:79:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.649 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.077 GB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top dct -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.0.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.122 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.1.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.2.prechk.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 1.077 GB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.g.1.bc to D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.o.1.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'RD_Loop_Col' (source/dct.c:56) in function 'dct' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'DCT_Outer_Loop' (source/dct.c:6) in function 'dct' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Xpose_Row_Inner_Loop' (source/dct.c:28) in function 'dct' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'DCT_Outer_Loop' (source/dct.c:6) in function 'dct' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Xpose_Col_Inner_Loop' (source/dct.c:28) in function 'dct' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'WR_Loop_Col' (source/dct.c:68) in function 'dct' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'DCT_Outer_Loop' (source/dct.c:6) in function 'dct' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'DCT_Outer_Loop' (source/dct.c:6) in function 'dct' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'DCT_Inner_Loop' (source/dct.c:6) in function 'dct' completely with a factor of 8.
+INFO: [XFORM 203-102] Partitioning array 'dct_coeff_table' in dimension 2 automatically.
+Command         transform done; 0.151 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.o.1.tmp.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'dct' (source/dct.c:6:27)...16 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 1.077 GB.
+Execute         get_config_compile -enable_auto_rewind 
+Execute         get_config_compile -enable_loop_extract 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation2 -deadargelim -globaldce -mem2reg -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.o.2.bc -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'RD_Loop_Row' (source/dct.c:56:8) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row_DCT_Loop' (source/dct.c:28:13) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Row_Outer_Loop' (source/dct.c:28:16) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Col_DCT_Loop' (source/dct.c:28:13) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Col_Outer_Loop' (source/dct.c:28:16) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'WR_Loop_Row' (source/dct.c:68:8) in function 'dct'.
+INFO: [HLS 200-472] Inferring partial write operation for 'buf_2d_in' (source/dct.c:62:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_outbuf' (source/dct.c:19:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'col_inbuf' (source/dct.c:40:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf_2d_out' (source/dct.c:51:26)
+Command         transform done; 0.155 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 1.077 GB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.547 sec.
+Command     elaborate done; 4.952 sec.
+Execute     ap_eval exec zip -j D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.101 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+Execute       ap_set_top_model dct 
+Execute       get_model_list dct -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model dct 
+Execute       preproc_iomode -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       preproc_iomode -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       preproc_iomode -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       preproc_iomode -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       preproc_iomode -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       preproc_iomode -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Model list for configure: dct_Pipeline_RD_Loop_Row_RD_Loop_Col dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop dct_Pipeline_WR_Loop_Row_WR_Loop_Col dct
+INFO-FLOW: Configuring Module : dct_Pipeline_RD_Loop_Row_RD_Loop_Col ...
+Execute       set_default_model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       apply_spec_resource_limit dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+INFO-FLOW: Configuring Module : dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop ...
+Execute       set_default_model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       apply_spec_resource_limit dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+INFO-FLOW: Configuring Module : dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop ...
+Execute       set_default_model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       apply_spec_resource_limit dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+INFO-FLOW: Configuring Module : dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop ...
+Execute       set_default_model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       apply_spec_resource_limit dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+INFO-FLOW: Configuring Module : dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop ...
+Execute       set_default_model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       apply_spec_resource_limit dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+INFO-FLOW: Configuring Module : dct_Pipeline_WR_Loop_Row_WR_Loop_Col ...
+Execute       set_default_model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       apply_spec_resource_limit dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+INFO-FLOW: Configuring Module : dct ...
+Execute       set_default_model dct 
+Execute       apply_spec_resource_limit dct 
+INFO-FLOW: Model list for preprocess: dct_Pipeline_RD_Loop_Row_RD_Loop_Col dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop dct_Pipeline_WR_Loop_Row_WR_Loop_Col dct
+INFO-FLOW: Preprocessing Module: dct_Pipeline_RD_Loop_Row_RD_Loop_Col ...
+Execute       set_default_model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       cdfg_preprocess -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       rtl_gen_preprocess dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+INFO-FLOW: Preprocessing Module: dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop ...
+Execute       set_default_model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       cdfg_preprocess -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+INFO-FLOW: Preprocessing Module: dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop ...
+Execute       set_default_model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       cdfg_preprocess -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+INFO-FLOW: Preprocessing Module: dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop ...
+Execute       set_default_model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       cdfg_preprocess -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+INFO-FLOW: Preprocessing Module: dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop ...
+Execute       set_default_model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       cdfg_preprocess -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+INFO-FLOW: Preprocessing Module: dct_Pipeline_WR_Loop_Row_WR_Loop_Col ...
+Execute       set_default_model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       cdfg_preprocess -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       rtl_gen_preprocess dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+INFO-FLOW: Preprocessing Module: dct ...
+Execute       set_default_model dct 
+Execute       cdfg_preprocess -model dct 
+Execute       rtl_gen_preprocess dct 
+INFO-FLOW: Model list for synthesis: dct_Pipeline_RD_Loop_Row_RD_Loop_Col dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop dct_Pipeline_WR_Loop_Row_WR_Loop_Col dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       schedule -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'buf_2d_in'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'RD_Loop_Row_RD_Loop_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'RD_Loop_Row_RD_Loop_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_RD_Loop_Row_RD_Loop_Col.
+Execute       set_default_model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       bind -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_RD_Loop_Row_RD_Loop_Col.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       schedule -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'buf_2d_in'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'Row_DCT_Loop_DCT_Outer_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'Row_DCT_Loop_DCT_Outer_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.101 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.
+Execute       set_default_model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       bind -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       schedule -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'col_inbuf'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.
+Execute       set_default_model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       bind -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       schedule -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln16_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'col_inbuf'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'Col_DCT_Loop_DCT_Outer_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'Col_DCT_Loop_DCT_Outer_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.103 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.
+Execute       set_default_model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       bind -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       schedule -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.
+Execute       set_default_model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       bind -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       schedule -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WR_Loop_Row_WR_Loop_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'WR_Loop_Row_WR_Loop_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_WR_Loop_Row_WR_Loop_Col.
+Execute       set_default_model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       bind -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_WR_Loop_Row_WR_Loop_Col.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct 
+Execute       schedule -model dct 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.sched.adb -f 
+INFO-FLOW: Finish scheduling dct.
+Execute       set_default_model dct 
+Execute       bind -model dct 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 1.077 GB.
+Execute       syn_report -verbosereport -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.175 sec.
+Execute       db_write -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.bind.adb -f 
+INFO-FLOW: Finish binding dct.
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       rtl_gen_preprocess dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       rtl_gen_preprocess dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       rtl_gen_preprocess dct 
+INFO-FLOW: Model list for RTL generation: dct_Pipeline_RD_Loop_Row_RD_Loop_Col dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop dct_Pipeline_WR_Loop_Row_WR_Loop_Col dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dct_Pipeline_RD_Loop_Row_RD_Loop_Col -top_prefix dct_ -sub_prefix dct_ -mg_file D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' pipeline 'RD_Loop_Row_RD_Loop_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.233 seconds; current allocated memory: 1.077 GB.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_RD_Loop_Row_RD_Loop_Col -style xilinx -f -lang vhdl -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/vhdl/dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       gen_rtl dct_Pipeline_RD_Loop_Row_RD_Loop_Col -style xilinx -f -lang vlog -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/verilog/dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+Execute       syn_report -csynth -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_RD_Loop_Row_RD_Loop_Col_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_RD_Loop_Row_RD_Loop_Col_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col -f -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.adb 
+Execute       db_write -model dct_Pipeline_RD_Loop_Row_RD_Loop_Col -bindview -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_RD_Loop_Row_RD_Loop_Col -p D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -top_prefix dct_ -sub_prefix dct_ -mg_file D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop' pipeline 'Row_DCT_Loop_DCT_Outer_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_14ns_29s_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_13ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_29s_29_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16s_15s_29_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 1.077 GB.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -style xilinx -f -lang vhdl -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/vhdl/dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       gen_rtl dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -style xilinx -f -lang vlog -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/verilog/dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+Execute       syn_report -csynth -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.101 sec.
+Execute       db_write -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -f -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.adb 
+Execute       db_write -model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -bindview -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop -p D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -top_prefix dct_ -sub_prefix dct_ -mg_file D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' pipeline 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.345 seconds; current allocated memory: 1.077 GB.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -style xilinx -f -lang vhdl -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/vhdl/dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       gen_rtl dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -style xilinx -f -lang vlog -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/verilog/dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+Execute       syn_report -csynth -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -f -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.adb 
+Execute       db_write -model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -bindview -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop -p D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -top_prefix dct_ -sub_prefix dct_ -mg_file D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop' pipeline 'Col_DCT_Loop_DCT_Outer_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_14ns_29s_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_13ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_29ns_29_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_29s_29_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16s_15s_29_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 1.077 GB.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -style xilinx -f -lang vhdl -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/vhdl/dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       gen_rtl dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -style xilinx -f -lang vlog -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/verilog/dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+Execute       syn_report -csynth -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -f -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.adb 
+Execute       db_write -model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -bindview -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop -p D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -top_prefix dct_ -sub_prefix dct_ -mg_file D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' pipeline 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.313 seconds; current allocated memory: 1.077 GB.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -style xilinx -f -lang vhdl -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/vhdl/dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       gen_rtl dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -style xilinx -f -lang vlog -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/verilog/dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+Execute       syn_report -csynth -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -f -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.adb 
+Execute       db_write -model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -bindview -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop -p D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dct_Pipeline_WR_Loop_Row_WR_Loop_Col -top_prefix dct_ -sub_prefix dct_ -mg_file D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' pipeline 'WR_Loop_Row_WR_Loop_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.077 GB.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_WR_Loop_Row_WR_Loop_Col -style xilinx -f -lang vhdl -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/vhdl/dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       gen_rtl dct_Pipeline_WR_Loop_Row_WR_Loop_Col -style xilinx -f -lang vlog -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/verilog/dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+Execute       syn_report -csynth -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_WR_Loop_Row_WR_Loop_Col_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_Pipeline_WR_Loop_Row_WR_Loop_Col_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col -f -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.adb 
+Execute       db_write -model dct_Pipeline_WR_Loop_Row_WR_Loop_Col -bindview -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_WR_Loop_Row_WR_Loop_Col -p D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dct -top_prefix  -sub_prefix dct_ -mg_file D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 1.077 GB.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vhdl -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/vhdl/dct 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vlog -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/verilog/dct 
+Execute       syn_report -csynth -model dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/dct_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.211 sec.
+Execute       db_write -model dct -f -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.adb 
+Execute       db_write -model dct -bindview -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct -p D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct 
+Execute       export_constraint_db -f -tool general -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.constraint.tcl 
+Execute       syn_report -designview -model dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.design.xml 
+Command       syn_report done; 0.167 sec.
+Execute       syn_report -csynthDesign -model dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model dct -o D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks dct 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain dct 
+INFO-FLOW: Model list for RTL component generation: dct_Pipeline_RD_Loop_Row_RD_Loop_Col dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop dct_Pipeline_WR_Loop_Row_WR_Loop_Col dct
+INFO-FLOW: Handling components in module [dct_Pipeline_RD_Loop_Row_RD_Loop_Col] ... 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.compgen.tcl 
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop] ... 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.compgen.tcl 
+INFO-FLOW: Found component dct_mul_mul_16s_15s_29_4_1.
+INFO-FLOW: Append model dct_mul_mul_16s_15s_29_4_1
+INFO-FLOW: Found component dct_mac_muladd_16s_15s_13ns_29_4_1.
+INFO-FLOW: Append model dct_mac_muladd_16s_15s_13ns_29_4_1
+INFO-FLOW: Found component dct_mac_muladd_16s_14ns_29s_29_4_1.
+INFO-FLOW: Append model dct_mac_muladd_16s_14ns_29s_29_4_1
+INFO-FLOW: Found component dct_mac_muladd_16s_15s_29s_29_4_1.
+INFO-FLOW: Append model dct_mac_muladd_16s_15s_29s_29_4_1
+INFO-FLOW: Found component dct_mac_muladd_16s_15s_29ns_29_4_1.
+INFO-FLOW: Append model dct_mac_muladd_16s_15s_29ns_29_4_1
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop] ... 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.compgen.tcl 
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop] ... 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.compgen.tcl 
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop] ... 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.compgen.tcl 
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct_Pipeline_WR_Loop_Row_WR_Loop_Col] ... 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.compgen.tcl 
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct] ... 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.compgen.tcl 
+INFO-FLOW: Found component dct_dct_coeff_table_0_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_0_ROM_AUTO_1R
+INFO-FLOW: Found component dct_dct_coeff_table_1_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_1_ROM_AUTO_1R
+INFO-FLOW: Found component dct_dct_coeff_table_2_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_2_ROM_AUTO_1R
+INFO-FLOW: Found component dct_dct_coeff_table_3_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_3_ROM_AUTO_1R
+INFO-FLOW: Found component dct_dct_coeff_table_4_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_4_ROM_AUTO_1R
+INFO-FLOW: Found component dct_dct_coeff_table_5_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_5_ROM_AUTO_1R
+INFO-FLOW: Found component dct_dct_coeff_table_6_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_6_ROM_AUTO_1R
+INFO-FLOW: Found component dct_dct_coeff_table_7_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_7_ROM_AUTO_1R
+INFO-FLOW: Found component dct_row_outbuf_RAM_AUTO_1R1W.
+INFO-FLOW: Append model dct_row_outbuf_RAM_AUTO_1R1W
+INFO-FLOW: Found component dct_col_inbuf_RAM_1WNR_AUTO_1R1W.
+INFO-FLOW: Append model dct_col_inbuf_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: Append model dct_Pipeline_RD_Loop_Row_RD_Loop_Col
+INFO-FLOW: Append model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop
+INFO-FLOW: Append model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop
+INFO-FLOW: Append model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop
+INFO-FLOW: Append model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop
+INFO-FLOW: Append model dct_Pipeline_WR_Loop_Row_WR_Loop_Col
+INFO-FLOW: Append model dct
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: dct_flow_control_loop_pipe_sequential_init dct_mul_mul_16s_15s_29_4_1 dct_mac_muladd_16s_15s_13ns_29_4_1 dct_mac_muladd_16s_14ns_29s_29_4_1 dct_mac_muladd_16s_15s_29s_29_4_1 dct_mac_muladd_16s_15s_29ns_29_4_1 dct_flow_control_loop_pipe_sequential_init dct_flow_control_loop_pipe_sequential_init dct_flow_control_loop_pipe_sequential_init dct_flow_control_loop_pipe_sequential_init dct_flow_control_loop_pipe_sequential_init dct_dct_coeff_table_0_ROM_AUTO_1R dct_dct_coeff_table_1_ROM_AUTO_1R dct_dct_coeff_table_2_ROM_AUTO_1R dct_dct_coeff_table_3_ROM_AUTO_1R dct_dct_coeff_table_4_ROM_AUTO_1R dct_dct_coeff_table_5_ROM_AUTO_1R dct_dct_coeff_table_6_ROM_AUTO_1R dct_dct_coeff_table_7_ROM_AUTO_1R dct_row_outbuf_RAM_AUTO_1R1W dct_col_inbuf_RAM_1WNR_AUTO_1R1W dct_Pipeline_RD_Loop_Row_RD_Loop_Col dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop dct_Pipeline_WR_Loop_Row_WR_Loop_Col dct
+INFO-FLOW: Generating D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_mul_mul_16s_15s_29_4_1
+INFO-FLOW: To file: write model dct_mac_muladd_16s_15s_13ns_29_4_1
+INFO-FLOW: To file: write model dct_mac_muladd_16s_14ns_29s_29_4_1
+INFO-FLOW: To file: write model dct_mac_muladd_16s_15s_29s_29_4_1
+INFO-FLOW: To file: write model dct_mac_muladd_16s_15s_29ns_29_4_1
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_dct_coeff_table_0_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_dct_coeff_table_1_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_dct_coeff_table_2_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_dct_coeff_table_3_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_dct_coeff_table_4_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_dct_coeff_table_5_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_dct_coeff_table_6_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_dct_coeff_table_7_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_row_outbuf_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model dct_col_inbuf_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: To file: write model dct_Pipeline_RD_Loop_Row_RD_Loop_Col
+INFO-FLOW: To file: write model dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop
+INFO-FLOW: To file: write model dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop
+INFO-FLOW: To file: write model dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop
+INFO-FLOW: To file: write model dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop
+INFO-FLOW: To file: write model dct_Pipeline_WR_Loop_Row_WR_Loop_Col
+INFO-FLOW: To file: write model dct
+INFO-FLOW: Generating D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.101 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/vhdl' dstVlogDir='D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/vlog' tclDir='D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db' modelList='dct_flow_control_loop_pipe_sequential_init
+dct_mul_mul_16s_15s_29_4_1
+dct_mac_muladd_16s_15s_13ns_29_4_1
+dct_mac_muladd_16s_14ns_29s_29_4_1
+dct_mac_muladd_16s_15s_29s_29_4_1
+dct_mac_muladd_16s_15s_29ns_29_4_1
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_dct_coeff_table_0_ROM_AUTO_1R
+dct_dct_coeff_table_1_ROM_AUTO_1R
+dct_dct_coeff_table_2_ROM_AUTO_1R
+dct_dct_coeff_table_3_ROM_AUTO_1R
+dct_dct_coeff_table_4_ROM_AUTO_1R
+dct_dct_coeff_table_5_ROM_AUTO_1R
+dct_dct_coeff_table_6_ROM_AUTO_1R
+dct_dct_coeff_table_7_ROM_AUTO_1R
+dct_row_outbuf_RAM_AUTO_1R1W
+dct_col_inbuf_RAM_1WNR_AUTO_1R1W
+dct_Pipeline_RD_Loop_Row_RD_Loop_Col
+dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop
+dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop
+dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop
+dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop
+dct_Pipeline_WR_Loop_Row_WR_Loop_Col
+dct
+' expOnly='0'
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.compgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.compgen.tcl 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Command       ap_source done; 0.124 sec.
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.compgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.compgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.compgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.compgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.compgen.tcl 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_0_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_1_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_2_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_3_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_4_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_5_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_6_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_7_ROM_AUTO_1R' using auto ROMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'dct_row_outbuf_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'dct_col_inbuf_RAM_1WNR_AUTO_1R1W_ram (RAM_1WnR)' using auto RAMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command       ap_source done; 0.33 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 1.415 seconds; current allocated memory: 1.077 GB.
+INFO-FLOW: DBG:PROC: ::AP::create_csynth_xml bind_adapter_nodes_var='bind_adapter_nodes' bind_report_dict_var='bind_report_dict' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+Execute       get_config_op mul -impl 
+Execute       get_config_op mul -latency 
+Execute       get_config_op mul -precision 
+Execute       get_config_op add -impl 
+Execute       get_config_op add -latency 
+Execute       get_config_op add -precision 
+Execute       get_config_op sub -impl 
+Execute       get_config_op sub -latency 
+Execute       get_config_op sub -precision 
+Execute       get_config_op fadd -impl 
+Execute       get_config_op fadd -latency 
+Execute       get_config_op fadd -precision 
+Execute       get_config_op fsub -impl 
+Execute       get_config_op fsub -latency 
+Execute       get_config_op fsub -precision 
+Execute       get_config_op fdiv -impl 
+Execute       get_config_op fdiv -latency 
+Execute       get_config_op fdiv -precision 
+Execute       get_config_op fexp -impl 
+Execute       get_config_op fexp -latency 
+Execute       get_config_op fexp -precision 
+Execute       get_config_op flog -impl 
+Execute       get_config_op flog -latency 
+Execute       get_config_op flog -precision 
+Execute       get_config_op fmul -impl 
+Execute       get_config_op fmul -latency 
+Execute       get_config_op fmul -precision 
+Execute       get_config_op frsqrt -impl 
+Execute       get_config_op frsqrt -latency 
+Execute       get_config_op frsqrt -precision 
+Execute       get_config_op frecip -impl 
+Execute       get_config_op frecip -latency 
+Execute       get_config_op frecip -precision 
+Execute       get_config_op fsqrt -impl 
+Execute       get_config_op fsqrt -latency 
+Execute       get_config_op fsqrt -precision 
+Execute       get_config_op dadd -impl 
+Execute       get_config_op dadd -latency 
+Execute       get_config_op dadd -precision 
+Execute       get_config_op dsub -impl 
+Execute       get_config_op dsub -latency 
+Execute       get_config_op dsub -precision 
+Execute       get_config_op ddiv -impl 
+Execute       get_config_op ddiv -latency 
+Execute       get_config_op ddiv -precision 
+Execute       get_config_op dexp -impl 
+Execute       get_config_op dexp -latency 
+Execute       get_config_op dexp -precision 
+Execute       get_config_op dlog -impl 
+Execute       get_config_op dlog -latency 
+Execute       get_config_op dlog -precision 
+Execute       get_config_op dmul -impl 
+Execute       get_config_op dmul -latency 
+Execute       get_config_op dmul -precision 
+Execute       get_config_op drsqrt -impl 
+Execute       get_config_op drsqrt -latency 
+Execute       get_config_op drsqrt -precision 
+Execute       get_config_op drecip -impl 
+Execute       get_config_op drecip -latency 
+Execute       get_config_op drecip -precision 
+Execute       get_config_op dsqrt -impl 
+Execute       get_config_op dsqrt -latency 
+Execute       get_config_op dsqrt -precision 
+Execute       get_config_op hadd -impl 
+Execute       get_config_op hadd -latency 
+Execute       get_config_op hadd -precision 
+Execute       get_config_op hsub -impl 
+Execute       get_config_op hsub -latency 
+Execute       get_config_op hsub -precision 
+Execute       get_config_op hdiv -impl 
+Execute       get_config_op hdiv -latency 
+Execute       get_config_op hdiv -precision 
+Execute       get_config_op hmul -impl 
+Execute       get_config_op hmul -latency 
+Execute       get_config_op hmul -precision 
+Execute       get_config_op hsqrt -impl 
+Execute       get_config_op hsqrt -latency 
+Execute       get_config_op hsqrt -precision 
+Execute       get_config_op facc -impl 
+Execute       get_config_op facc -latency 
+Execute       get_config_op facc -precision 
+Execute       get_config_op fmacc -impl 
+Execute       get_config_op fmacc -latency 
+Execute       get_config_op fmacc -precision 
+Execute       get_config_op fmadd -impl 
+Execute       get_config_op fmadd -latency 
+Execute       get_config_op fmadd -precision 
+Execute       get_config_storage fifo -auto_srl_max_bits 
+Execute       get_config_storage fifo -auto_srl_max_depth 
+Execute       get_config_storage fifo -impl 
+Execute       get_solution -flow_target 
+Execute       get_config_array_partition -complete_threshold 
+Execute       get_config_array_partition -throughput_driven 
+Execute       get_config_compile -enable_auto_rewind 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_compile -no_signed_zeros 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pre_tcl 
+Execute       get_config_compile -unsafe_math_optimizations 
+Execute       get_config_dataflow -default_channel 
+Execute       get_config_dataflow -disable_fifo_sizing_opt 
+Execute       get_config_dataflow -fifo_depth 
+Execute       get_config_dataflow -override_user_fifo_depth 
+Execute       get_config_dataflow -scalar_fifo_depth 
+Execute       get_config_dataflow -start_fifo_depth 
+Execute       get_config_dataflow -strict_mode 
+Execute       get_config_dataflow -strict_stable_sync 
+Execute       get_config_dataflow -task_level_fifo_depth 
+Execute       get_config_debug -directory 
+Execute       get_config_debug -enable 
+Execute       get_config_export -deadlock_detection 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -format 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_export -ipname 
+Execute       get_config_export -library 
+Execute       get_config_export -output 
+Execute       get_config_export -rtl 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -vendor 
+Execute       get_config_export -version 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_max_timing_paths 
+Execute       get_config_export -vivado_optimization_level 
+Execute       get_config_export -vivado_pblock 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_export -vivado_report_level 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_interface -clock_enable 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_config_interface -m_axi_addr64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_buffer_impl 
+Execute       get_config_interface -m_axi_conservative_mode 
+Execute       get_config_interface -m_axi_flush_mode 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -register_io 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -s_axilite_mailbox 
+Execute       get_config_interface -s_axilite_status_regs 
+Execute       get_config_interface -s_axilite_sw_reset 
+Execute       get_config_rtl -header 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -mult_keep_attribute 
+Execute       get_config_rtl -register_all_io 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -reset 
+Execute       get_config_rtl -reset_async 
+Execute       get_config_rtl -reset_level 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_unroll -tripcount_threshold 
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:       create_csynth_xml wrote csynth_xml=D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='dct_flow_control_loop_pipe_sequential_init
+dct_mul_mul_16s_15s_29_4_1
+dct_mac_muladd_16s_15s_13ns_29_4_1
+dct_mac_muladd_16s_14ns_29s_29_4_1
+dct_mac_muladd_16s_15s_29s_29_4_1
+dct_mac_muladd_16s_15s_29ns_29_4_1
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_flow_control_loop_pipe_sequential_init
+dct_dct_coeff_table_0_ROM_AUTO_1R
+dct_dct_coeff_table_1_ROM_AUTO_1R
+dct_dct_coeff_table_2_ROM_AUTO_1R
+dct_dct_coeff_table_3_ROM_AUTO_1R
+dct_dct_coeff_table_4_ROM_AUTO_1R
+dct_dct_coeff_table_5_ROM_AUTO_1R
+dct_dct_coeff_table_6_ROM_AUTO_1R
+dct_dct_coeff_table_7_ROM_AUTO_1R
+dct_row_outbuf_RAM_AUTO_1R1W
+dct_col_inbuf_RAM_1WNR_AUTO_1R1W
+dct_Pipeline_RD_Loop_Row_RD_Loop_Col
+dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop
+dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop
+dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop
+dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop
+dct_Pipeline_WR_Loop_Row_WR_Loop_Col
+dct
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_RD_Loop_Row_RD_Loop_Col.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct_Pipeline_WR_Loop_Row_WR_Loop_Col.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.constraint.tcl 
+Execute       sc_get_clocks dct 
+Execute       source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:PROC: ::AP::add_csynth_report_sections bind_adapter_nodes='' bind_report_dict='TOP dct DATA {dct {DEPTH 1 CHILDREN {dct_Pipeline_RD_Loop_Row_RD_Loop_Col dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop dct_Pipeline_WR_Loop_Row_WR_Loop_Col} BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME row_outbuf_U SOURCE source/dct.c:26 VARIABLE row_outbuf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME col_outbuf_U SOURCE source/dct.c:27 VARIABLE col_outbuf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_np PRAGMA {} RTLNAME col_inbuf_U SOURCE source/dct.c:27 VARIABLE col_inbuf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 7 URAM 0 DISPNAME {bind_storage rom_np}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_np PRAGMA {} RTLNAME buf_2d_in_U SOURCE source/dct.c:81 VARIABLE buf_2d_in LOOP {} BUNDLEDNAME {} DSP 0 BRAM 7 URAM 0 DISPNAME {bind_storage rom_np}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME buf_2d_out_U SOURCE source/dct.c:82 VARIABLE buf_2d_out LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_0_U SOURCE {} VARIABLE dct_coeff_table_0 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_1_U SOURCE {} VARIABLE dct_coeff_table_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_2_U SOURCE {} VARIABLE dct_coeff_table_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_3_U SOURCE {} VARIABLE dct_coeff_table_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_4_U SOURCE {} VARIABLE dct_coeff_table_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_5_U SOURCE {} VARIABLE dct_coeff_table_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_6_U SOURCE {} VARIABLE dct_coeff_table_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_7_U SOURCE {} VARIABLE dct_coeff_table_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage rom_1p}}} AREA {DSP 16 BRAM 17 URAM 0}} dct_Pipeline_RD_Loop_Row_RD_Loop_Col {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln59_1_fu_111_p2 SOURCE source/dct.c:59 VARIABLE add_ln59_1 LOOP RD_Loop_Row_RD_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln59_fu_123_p2 SOURCE source/dct.c:59 VARIABLE add_ln59 LOOP RD_Loop_Row_RD_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln62_fu_167_p2 SOURCE source/dct.c:62 VARIABLE add_ln62 LOOP RD_Loop_Row_RD_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln61_fu_178_p2 SOURCE source/dct.c:61 VARIABLE add_ln61 LOOP RD_Loop_Row_RD_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln32_1_fu_345_p2 SOURCE source/dct.c:32 VARIABLE add_ln32_1 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln32_fu_354_p2 SOURCE source/dct.c:32 VARIABLE add_ln32 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_1_fu_736_p2 SOURCE source/dct.c:19 VARIABLE add_ln19_1 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_1_U7 SOURCE source/dct.c:16 VARIABLE mul_ln16 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16s_15s_29_4_1_U3 SOURCE source/dct.c:16 VARIABLE mul_ln16_1 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16s_15s_29_4_1_U4 SOURCE source/dct.c:16 VARIABLE mul_ln16_2 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U8 SOURCE source/dct.c:16 VARIABLE mul_ln16_3 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16s_15s_29_4_1_U5 SOURCE source/dct.c:16 VARIABLE mul_ln16_4 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U9 SOURCE source/dct.c:16 VARIABLE mul_ln16_5 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29ns_29_4_1_U10 SOURCE source/dct.c:16 VARIABLE mul_ln16_6 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_13ns_29_4_1_U6 SOURCE source/dct.c:19 VARIABLE mul_ln19 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_1_U7 SOURCE source/dct.c:19 VARIABLE add_ln19_2 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U8 SOURCE source/dct.c:19 VARIABLE add_ln19_3 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_4_fu_823_p2 SOURCE source/dct.c:19 VARIABLE add_ln19_4 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U9 SOURCE source/dct.c:19 VARIABLE add_ln19_5 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_13ns_29_4_1_U6 SOURCE source/dct.c:19 VARIABLE add_ln19_6 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29ns_29_4_1_U10 SOURCE source/dct.c:19 VARIABLE add_ln19_7 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_8_fu_827_p2 SOURCE source/dct.c:19 VARIABLE add_ln19_8 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_fu_831_p2 SOURCE source/dct.c:19 VARIABLE add_ln19 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln13_fu_742_p2 SOURCE source/dct.c:13 VARIABLE add_ln13 LOOP Row_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 8 BRAM 0 URAM 0}} dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln37_1_fu_105_p2 SOURCE source/dct.c:37 VARIABLE add_ln37_1 LOOP Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln37_fu_117_p2 SOURCE source/dct.c:37 VARIABLE add_ln37 LOOP Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln40_fu_177_p2 SOURCE source/dct.c:40 VARIABLE add_ln40 LOOP Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln40_1_fu_188_p2 SOURCE source/dct.c:40 VARIABLE add_ln40_1 LOOP Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln39_fu_194_p2 SOURCE source/dct.c:39 VARIABLE add_ln39 LOOP Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln43_1_fu_345_p2 SOURCE source/dct.c:43 VARIABLE add_ln43_1 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln43_fu_354_p2 SOURCE source/dct.c:43 VARIABLE add_ln43 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_fu_736_p2 SOURCE source/dct.c:19 VARIABLE add_ln19 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_1_U32 SOURCE source/dct.c:16 VARIABLE mul_ln16 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16s_15s_29_4_1_U28 SOURCE source/dct.c:16 VARIABLE mul_ln16_7 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16s_15s_29_4_1_U29 SOURCE source/dct.c:16 VARIABLE mul_ln16_8 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U33 SOURCE source/dct.c:16 VARIABLE mul_ln16_9 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mul_mul_16s_15s_29_4_1_U30 SOURCE source/dct.c:16 VARIABLE mul_ln16_10 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U34 SOURCE source/dct.c:16 VARIABLE mul_ln16_11 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29ns_29_4_1_U35 SOURCE source/dct.c:16 VARIABLE mul_ln16_12 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_13ns_29_4_1_U31 SOURCE source/dct.c:19 VARIABLE mul_ln19 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_1_U32 SOURCE source/dct.c:19 VARIABLE add_ln19_9 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U33 SOURCE source/dct.c:19 VARIABLE add_ln19_10 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_11_fu_823_p2 SOURCE source/dct.c:19 VARIABLE add_ln19_11 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_1_U34 SOURCE source/dct.c:19 VARIABLE add_ln19_12 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_13ns_29_4_1_U31 SOURCE source/dct.c:19 VARIABLE add_ln19_13 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29ns_29_4_1_U35 SOURCE source/dct.c:19 VARIABLE add_ln19_14 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_15_fu_827_p2 SOURCE source/dct.c:19 VARIABLE add_ln19_15 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL tadder LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln19_1_fu_831_p2 SOURCE source/dct.c:19 VARIABLE add_ln19_1 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln13_fu_742_p2 SOURCE source/dct.c:13 VARIABLE add_ln13 LOOP Col_DCT_Loop_DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 8 BRAM 0 URAM 0}} dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_1_fu_105_p2 SOURCE source/dct.c:48 VARIABLE add_ln48_1 LOOP Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_fu_117_p2 SOURCE source/dct.c:48 VARIABLE add_ln48 LOOP Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln51_fu_177_p2 SOURCE source/dct.c:51 VARIABLE add_ln51 LOOP Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln51_1_fu_188_p2 SOURCE source/dct.c:51 VARIABLE add_ln51_1 LOOP Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_fu_194_p2 SOURCE source/dct.c:50 VARIABLE add_ln50 LOOP Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} dct_Pipeline_WR_Loop_Row_WR_Loop_Col {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln71_1_fu_111_p2 SOURCE source/dct.c:71 VARIABLE add_ln71_1 LOOP WR_Loop_Row_WR_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln71_fu_123_p2 SOURCE source/dct.c:71 VARIABLE add_ln71 LOOP WR_Loop_Row_WR_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln74_fu_167_p2 SOURCE source/dct.c:74 VARIABLE add_ln74 LOOP WR_Loop_Row_WR_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln73_fu_178_p2 SOURCE source/dct.c:73 VARIABLE add_ln73 LOOP WR_Loop_Row_WR_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}}}'
+INFO-FLOW: DBG:PUTS:       update_csynth_reports json2reportxml
+INFO-FLOW: Running: gen_csynth_pragma_report_xml
+INFO-FLOW: Done: gen_csynth_pragma_report_xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:       update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:       update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.077 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+Execute       syn_report -model dct -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 278.54 MHz
+Command     autosyn done; 4.9 sec.
+Command   csynth_design done; 9.959 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 9.959 seconds; current allocated memory: 263.664 MB.
+Command ap_source done; 10.633 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1 opened at Thu Sep 22 16:16:54 +0300 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xczu7ev-ffvc1156-2-e 
+Execute       create_platform xczu7ev-ffvc1156-2-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Programs/Xilinx/Vitis_HLS/2021.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Programs/Xilinx/Vivado/2021.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Command       create_platform done; 0.422 sec.
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.524 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 0.537 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+Execute     create_platform xczu7ev-ffvc1156-2-e -board  
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.112 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   cosim_design 
+INFO: [HLS 200-1510] Running: cosim_design 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Programs/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: TB processing: D:/Labs/3sem/FPGA/lab1_z0/source/dct_test.c D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/./sim/autowrap/testbench/dct_test.c_pre.c
+Execute     clang_tidy xilinx-tb-process -desc tb-process D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/./sim/autowrap/testbench/dct_test.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/./sim/autowrap/testbench/dct_test.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: TB processing: D:/Labs/3sem/FPGA/lab1_z0/source/dct.c D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/./sim/autowrap/testbench/dct.c_pre.c
+Execute     clang_tidy xilinx-tb-process -desc tb-process D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/./sim/autowrap/testbench/dct.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec C:/Programs/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/./sim/autowrap/testbench/dct.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.214 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/Labs/3sem/FPGA/lab1_z0/dct_prj/solution1/.autopilot/db/dct.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 13.393 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 28.697 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 28.697 seconds; current allocated memory: 286.219 MB.
+Command ap_source done; 29.372 sec.
+Execute cleanup_all 

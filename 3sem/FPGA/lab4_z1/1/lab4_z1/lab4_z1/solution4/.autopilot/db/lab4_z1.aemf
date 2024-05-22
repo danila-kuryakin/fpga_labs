@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1667895062000">
+  <ports id="1" name="firstVector_arr" type="PortType" coreName="RAM" coreId="1702129263" bitwidth="16" iftype="IfTypeRegister" arraysize="4">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="secondVector_arr" type="PortType" coreName="RAM" coreId="1869376609" bitwidth="16" iftype="IfTypeRegister" arraysize="4">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="3" name="resultVecror_arr" type="PortType" coreName="RAM" coreId="1953852527" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="4">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <edges id="64" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="66" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="69" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="70" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="78" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="80" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.4"/>
+  <edges id="82" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.5"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.2/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.5"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.2/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.6"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.2/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.7"/>
+  <edges id="88" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.2/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.9"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.2/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.10"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.2/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.10"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.2/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.11"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.12"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.12"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.2/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.13"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.2/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.14"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.2/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.14"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.2/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.15"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.2/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.16"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.2/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.16"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.2/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.17"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.2/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.17"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.2/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.18"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.18"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.19"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.20"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.2/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.21"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.21"/>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.21"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="119" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="124" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="130" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="136" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="148" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="159" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="161" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.2/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="169" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.2/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="175" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="178" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.2/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5" is_back_edge="1"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5" is_back_edge="1"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5" is_back_edge="1"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="271" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="272" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="278" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.2/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.18"/>
+  <edges id="-88" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@ports.2"/>
+  <blocks id="8" name="block_8" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>rewind_header</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln9" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="53" contextFuncName="lab4_z1" opcode="br" m_display="0" m_delay="1.61" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+      <controlInputObjs>rewind_header</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="./source/lab4_z1.c">
+      <validLinenumbers>9</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" iiViolation="Resource Limitation;mFailedII=1;mDependenceDistancedII=-1;mLimitedResource=1;nodes=28__core/RAM/firstVector_arr//load/store,22__core/RAM/firstVector_arr//load/store,25__;" id="267" pipe_depth="7" RegionName="L2">
+    <basic_blocks id="16" name="rewind_header" type="BlockType">
+      <controlInputObjs>block_8</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>block_63</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>rewind_init</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="do_init" coreId="53" bitwidth="1" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataOutputObjs>br</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_63</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="sext_ln9_rewind" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="211" contextFuncName="lab4_z1" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_63</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="firstVector_arr_load_2_cast_rewind" coreId="53" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_63</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="firstVector_arr_load_1_cast_rewind" coreId="49" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_63</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="firstVector_arr_load_cast_rewind" coreId="53" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_63</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i1" originalName="i" coreId="49" bitwidth="2" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>block_8</controlInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_63</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln0" coreId="0" opcode="br" nodeLabel="3.0" m_display="0" m_delay="1.61" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./source/lab4_z1.c">
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="34" name="rewind_init" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="firstVector_arr_addr" coreId="4294967295" bitwidth="2" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>firstVector_arr</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="firstVector_arr_load" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="firstVector_arr_load_cast" rtlName="firstVector_arr_load_cast_fu_286_p1" coreId="50" bitwidth="17" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="firstVector_arr_addr_1" coreId="49" bitwidth="2" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <dataInputObjs>firstVector_arr</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="firstVector_arr_load_1" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="1" m_delay="2.15" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="firstVector_arr_load_1_cast" rtlName="firstVector_arr_load_1_cast_fu_289_p1" coreId="3853205296" bitwidth="17" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="firstVector_arr_addr_2" coreId="111" bitwidth="2" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <dataInputObjs>firstVector_arr</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="firstVector_arr_load_2" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="firstVector_arr_load_2_cast" rtlName="firstVector_arr_load_2_cast_fu_292_p1" coreId="0" bitwidth="17" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="firstVector_arr_addr_3" coreId="1819113472" bitwidth="2" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <dataInputObjs>firstVector_arr</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="firstVector_arr_load_3" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="sext_ln9" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="sext_ln9_fu_296_p1" coreId="3851981568" contextFuncName="lab4_z1" bitwidth="17" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln9" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="3850336840" contextFuncName="lab4_z1" opcode="br" nodeLabel="3.0" m_display="0" m_delay="1.61" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <controlInputObjs>.split</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./source/lab4_z1.c">
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="60" name=".split" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlInputObjs>rewind_init</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_63</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="sext_ln9_phi" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="0" contextFuncName="lab4_z1" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="firstVector_arr_load_2_cast_phi" coreId="73" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="firstVector_arr_load_1_cast_phi" coreId="0" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="firstVector_arr_load_cast_phi" coreId="0" bitwidth="17" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="zext_ln9" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="zext_ln9_fu_268_p1" coreId="0" contextFuncName="lab4_z1" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="secondVector_arr_addr" lineNumber="14" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="3850334432" contextFuncName="lab4_z1" bitwidth="2" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="14" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>secondVector_arr</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="secondVector_arr_load" lineNumber="14" fileName="./source/lab4_z1.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="lab4_z1" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="14" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="sext_ln14" lineNumber="14" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="1702257920" contextFuncName="lab4_z1" bitwidth="32" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="14" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="resultVecror_arr_addr" lineNumber="14" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="3850334048" contextFuncName="lab4_z1" bitwidth="2" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="14" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>resultVecror_arr</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>resultVecror_arr</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="resultVecror_arr_load" lineNumber="14" fileName="./source/lab4_z1.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="lab4_z1" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="14" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="tmp4" rtlName="tmp4_fu_303_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="17" opcode="add" nodeLabel="4.0" m_display="0" m_delay="2.18" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="tmp4_cast" coreId="3850341728" bitwidth="18" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="tmp5" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="tmp5_fu_313_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="lab4_z1" bitwidth="17" opcode="add" nodeLabel="4.0" m_display="0" m_delay="2.18" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="tmp5_cast" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="3853207072" contextFuncName="lab4_z1" bitwidth="18" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="tmp2" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" coreName="DSP48" implIndex="dsp" control="no" opType="add" coreId="119" contextFuncName="lab4_z1" bitwidth="18" opcode="add" nodeLabel="4.0" m_display="0" m_delay="2.45" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="tmp2_cast" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" coreName="DSP48" implIndex="dsp" control="no" opType="sext" coreId="119" contextFuncName="lab4_z1" bitwidth="32" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp3" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" coreName="DSP48" implIndex="dsp" control="no" opType="mul" coreId="119" contextFuncName="lab4_z1" bitwidth="32" opcode="mul" nodeLabel="4.0" nodeLatency="2" m_display="0" m_delay="1.45" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add_ln14" lineNumber="14" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" coreName="DSP48" implIndex="dsp" control="no" opType="add" coreId="119" contextFuncName="lab4_z1" bitwidth="32" opcode="add" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.1" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="14" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="resultVecror_arr_addr_write_ln14" lineNumber="14" fileName="./source/lab4_z1.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="lab4_z1" opcode="store" nodeLabel="7.0" m_display="0" m_delay="2.15" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="14" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="i" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="i_fu_280_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="lab4_z1" bitwidth="2" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="icmp_ln9" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." rtlName="icmp_ln9_fu_274_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="lab4_z1" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.93" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="br_ln9" lineNumber="9" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="0" contextFuncName="lab4_z1" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="9" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+        <controlInputObjs>block_63</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./source/lab4_z1.c">
+        <validLinenumbers>9</validLinenumbers>
+        <validLinenumbers>14</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="63" name="block_63" type="BlockType">
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="_ln17" lineNumber="17" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="1819113472" contextFuncName="lab4_z1" opcode="return" nodeLabel="7.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="17" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln17" lineNumber="17" fileName="./source/lab4_z1.c" fileDirectory=".." coreId="0" contextFuncName="lab4_z1" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./source/lab4_z1.c" linenumber="17" fileDirectory="E:\Xilinx_trn\lab4_z1" functionName="lab4_z1"/>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./source/lab4_z1.c">
+        <validLinenumbers>17</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="resultVecror_arr_addr_reg_350">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="secondVector_arr_addr_reg_345">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln9_reg_410">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="secondVector_arr_load_reg_380">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="i1_reg_145">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_1_reg_365">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_390">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_addr_reg_335">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="resultVecror_arr_load_reg_385">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_addr_1_reg_340">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="do_init_reg_129">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_2_cast_phi_reg_232">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln14_reg_415">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_1_cast_reg_400">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln9_phi_reg_220">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_2_cast_rewind_reg_175">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_addr_3_reg_375">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_1_cast_phi_reg_244">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_2_cast_reg_405">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_1_cast_rewind_reg_190">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_cast_rewind_reg_205">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln9_reg_356">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln9_rewind_reg_160">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_cast_reg_395">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_cast_phi_reg_256">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_addr_2_reg_370">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="firstVector_arr_load_reg_360">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <expressionNodes realName="firstVector_arr_load_cast_phi_phi_fu_260">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_1_cast_phi_phi_fu_248">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln9_fu_296">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_addr_3_gep_fu_120">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_addr_1_gep_fu_72">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i1_phi_fu_149">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_addr_gep_fu_54">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondVector_arr_addr_gep_fu_81">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="resultVecror_arr_addr_gep_fu_94">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp5_cast_fu_319">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp5_fu_313">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="do_init_phi_fu_133">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln17_fu_323">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln9_rewind_phi_fu_164">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_1_cast_rewind_phi_fu_194">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln9_fu_268">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_280">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln9_phi_phi_fu_224">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp4_fu_303">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_2_cast_rewind_phi_fu_179">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_2_cast_fu_292">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_fu_274">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_1_cast_fu_289">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp4_cast_fu_309">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_cast_rewind_phi_fu_209">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_addr_2_gep_fu_111">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_2_cast_phi_phi_fu_236">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstVector_arr_load_cast_fu_286">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln14_fu_300">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_325">
+    <nodeIds>52</nodeIds>
+    <nodeIds>53</nodeIds>
+    <nodeIds>54</nodeIds>
+    <nodeIds>55</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="firstVector_arr">
+    <nodeIds>25</nodeIds>
+    <nodeIds>31</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="firstVector_arr" portID="1">
+    <nodeIds>22</nodeIds>
+    <nodeIds>28</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="resultVecror_arr">
+    <nodeIds>56</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="resultVecror_arr" portID="1">
+    <nodeIds>47</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="secondVector_arr">
+    <nodeIds>44</nodeIds>
+  </memoryPorts>
+  <ioPorts name="firstVector_arr(p0)">
+    <contents name="load">
+      <nodeIds>25</nodeIds>
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="firstVector_arr(p1)">
+    <contents name="load">
+      <nodeIds>22</nodeIds>
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="resultVecror_arr(p0)">
+    <contents name="store">
+      <nodeIds>56</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="resultVecror_arr(p1)">
+    <contents name="load">
+      <nodeIds>47</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="secondVector_arr(p0)">
+    <contents name="load">
+      <nodeIds>44</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="2" latency="2"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="2" latency="2"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="2" latency="2"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="2" latency="2"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="22" stage="1" latency="2"/>
+      <operations id="25" stage="1" latency="2"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="2" latency="2"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="2" latency="2"/>
+      <operations id="44" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="2"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="2"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="2"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="3" latency="3"/>
+    </states>
+    <states id="6">
+      <operations id="54" stage="2" latency="3"/>
+    </states>
+    <states id="7">
+      <operations id="54" stage="1" latency="3"/>
+      <operations id="55" stage="2" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="2"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="lab4_z1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="12" mMaxLatency="13">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="L2" mII="2" mDepth="7" mMinTripCount="4" mMaxTripCount="4" mMinLatency="12" mMaxLatency="12" mType="1">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>60</basicBlocks>
+      <basicBlocks>63</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

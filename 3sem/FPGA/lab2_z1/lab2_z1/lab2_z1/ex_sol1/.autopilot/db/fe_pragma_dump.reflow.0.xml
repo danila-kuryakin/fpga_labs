@@ -1,0 +1,4 @@
+<pragmas>
+<pragma file="./source/lab2_z1.c" line="6" pragmaType="pipeline" parentfunction="lab2_z1" off="1" ii="0" rewind="0" style=""/>
+<pragma file="./source/lab2_z1.c" line="6" pragmaType="loop_tripcount" parentfunction="lab2_z1" min="0" max="12" avg="6"/>
+</pragmas>

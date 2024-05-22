@@ -1,0 +1,122 @@
+
+
+================================================================
+== Synthesis Summary Report of 'lab4_z1'
+================================================================
++ General Information: 
+    * Date:           Thu Dec  8 19:43:44 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        lab4_z1
+    * Solution:       sol4 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xa7a12t-csg325-1Q
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |  Modules  | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |        |          |          |     |
+    |  & Loops  | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT   | URAM|
+    +-----------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |+ lab4_z1  |     -|  2.92|       13|  130.000|         -|       14|     -|        no|     -|  1 (2%)|  391 (2%)|  269 (3%)|    -|
+    | o L2      |    II|  9.00|       12|  120.000|         7|        2|     4|       yes|     -|       -|         -|         -|    -|
+    +-----------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++---------------------------+----------+
+| Interface                 | Bitwidth |
++---------------------------+----------+
+| firstVector_arr_address0  | 2        |
+| firstVector_arr_address1  | 2        |
+| firstVector_arr_q0        | 16       |
+| firstVector_arr_q1        | 16       |
+| resultVecror_arr_address0 | 2        |
+| resultVecror_arr_address1 | 2        |
+| resultVecror_arr_d0       | 32       |
+| resultVecror_arr_q1       | 32       |
+| secondVector_arr_address0 | 2        |
+| secondVector_arr_q0       | 16       |
++---------------------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------------+-----------+----------+
+| Argument         | Direction | Datatype |
++------------------+-----------+----------+
+| firstVector_arr  | in        | short*   |
+| secondVector_arr | in        | short*   |
+| resultVecror_arr | inout     | int*     |
++------------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------------+---------------------------+---------+----------+
+| Argument         | HW Interface              | HW Type | HW Usage |
++------------------+---------------------------+---------+----------+
+| firstVector_arr  | firstVector_arr_address0  | port    | offset   |
+| firstVector_arr  | firstVector_arr_ce0       | port    |          |
+| firstVector_arr  | firstVector_arr_q0        | port    |          |
+| firstVector_arr  | firstVector_arr_address1  | port    | offset   |
+| firstVector_arr  | firstVector_arr_ce1       | port    |          |
+| firstVector_arr  | firstVector_arr_q1        | port    |          |
+| secondVector_arr | secondVector_arr_address0 | port    | offset   |
+| secondVector_arr | secondVector_arr_ce0      | port    |          |
+| secondVector_arr | secondVector_arr_q0       | port    |          |
+| resultVecror_arr | resultVecror_arr_address0 | port    | offset   |
+| resultVecror_arr | resultVecror_arr_ce0      | port    |          |
+| resultVecror_arr | resultVecror_arr_we0      | port    |          |
+| resultVecror_arr | resultVecror_arr_d0       | port    |          |
+| resultVecror_arr | resultVecror_arr_address1 | port    | offset   |
+| resultVecror_arr | resultVecror_arr_ce1      | port    |          |
+| resultVecror_arr | resultVecror_arr_q1       | port    |          |
++------------------+---------------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                                       | DSP | Pragma | Variable | Op  | Impl   | Latency |
++--------------------------------------------+-----+--------+----------+-----+--------+---------+
+| + lab4_z1                                  | 1   |        |          |     |        |         |
+|   tmp4_fu_303_p2                           | -   |        | tmp4     | add | fabric | 0       |
+|   tmp5_fu_313_p2                           | -   |        | tmp5     | add | fabric | 0       |
+|   ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1 | 1   |        | tmp2     | add | dsp    | 3       |
+|   ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1 | 1   |        | tmp3     | mul | dsp    | 3       |
+|   ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1 | 1   |        | add_ln12 | add | dsp    | 3       |
+|   i_fu_280_p2                              | -   |        | i        | add | fabric | 0       |
++--------------------------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+----------------------+
+| Type     | Options | Location             |
++----------+---------+----------------------+
+| pipeline | off     | DIRECTIVE in lab4_z1 |
++----------+---------+----------------------+
+
+

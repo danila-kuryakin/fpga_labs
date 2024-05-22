@@ -1,0 +1,4 @@
+<pragmas>
+<pragma file="./lab3_z2/source/lab3_z2.c" line="3" pragmaType="pipeline" parentfunction="lab3_z2" off="1" ii="0" style=""/>
+<pragma file="./lab3_z2/source/lab3_z2.c" line="7" pragmaType="pipeline" parentfunction="lab3_z2" off="1" ii="0" rewind="0" style=""/>
+</pragmas>

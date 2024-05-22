@@ -1,0 +1,153 @@
+
+
+================================================================
+== Vitis HLS Report for 'lab3_z1'
+================================================================
+* Date:           Sat Oct 29 02:08:03 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        lab3_z1
+* Solution:       ex_sol1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xa7a12t-csg325-1Q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +------+---------+----------+------------+
+    | Clock|  Target | Estimated| Uncertainty|
+    +------+---------+----------+------------+
+    |clk   |  8.00 ns|  2.702 ns|     1.00 ns|
+    +------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  24.000 ns|  24.000 ns|    4|    4|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.15>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%inA_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %inA" [./source/lab3_z1.c:3]   --->   Operation 5 'read' 'inA_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln6 = sext i16 %inA_read" [./source/lab3_z1.c:6]   --->   Operation 6 'sext' 'sext_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%inC_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %inC" [./source/lab3_z1.c:6]   --->   Operation 7 'read' 'inC_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln6_1 = sext i16 %inC_read" [./source/lab3_z1.c:6]   --->   Operation 8 'sext' 'sext_ln6_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [4/4] (2.15ns) (root node of the DSP)   --->   "%temp = mul i32 %sext_ln6_1, i32 %sext_ln6" [./source/lab3_z1.c:6]   --->   Operation 9 'mul' 'temp' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 2 <SV = 1> <Delay = 2.15>
+ST_2 : Operation 10 [3/4] (2.15ns) (root node of the DSP)   --->   "%temp = mul i32 %sext_ln6_1, i32 %sext_ln6" [./source/lab3_z1.c:6]   --->   Operation 10 'mul' 'temp' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 3 <SV = 2> <Delay = 2.15>
+ST_3 : Operation 11 [2/4] (2.15ns) (root node of the DSP)   --->   "%temp = mul i32 %sext_ln6_1, i32 %sext_ln6" [./source/lab3_z1.c:6]   --->   Operation 11 'mul' 'temp' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 2.70>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 13 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %inA"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %inA, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %inB"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %inB, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %inC"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %inC, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %res"   --->   Operation 20 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %res, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%inB_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %inB" [./source/lab3_z1.c:3]   --->   Operation 22 'read' 'inB_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/4] (0.00ns) (root node of the DSP)   --->   "%temp = mul i32 %sext_ln6_1, i32 %sext_ln6" [./source/lab3_z1.c:6]   --->   Operation 23 'mul' 'temp' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%sext_ln7 = sext i16 %inB_read" [./source/lab3_z1.c:7]   --->   Operation 24 'sext' 'sext_ln7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (2.70ns)   --->   "%add_ln7 = add i32 %temp, i32 %sext_ln7" [./source/lab3_z1.c:7]   --->   Operation 25 'add' 'add_ln7' <Predicate = true> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%write_ln7 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %res, i32 %add_ln7" [./source/lab3_z1.c:7]   --->   Operation 26 'write' 'write_ln7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln8 = ret i32 %temp" [./source/lab3_z1.c:8]   --->   Operation 27 'ret' 'ret_ln8' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 8ns, clock uncertainty: 1ns.
+
+ <State 1>: 2.15ns
+The critical path consists of the following:
+	wire read operation ('inA', ./source/lab3_z1.c:3) on port 'inA' (./source/lab3_z1.c:3) [16]  (0 ns)
+	'mul' operation of DSP[20] ('temp', ./source/lab3_z1.c:6) [20]  (2.15 ns)
+
+ <State 2>: 2.15ns
+The critical path consists of the following:
+	'mul' operation of DSP[20] ('temp', ./source/lab3_z1.c:6) [20]  (2.15 ns)
+
+ <State 3>: 2.15ns
+The critical path consists of the following:
+	'mul' operation of DSP[20] ('temp', ./source/lab3_z1.c:6) [20]  (2.15 ns)
+
+ <State 4>: 2.7ns
+The critical path consists of the following:
+	wire read operation ('inB', ./source/lab3_z1.c:3) on port 'inB' (./source/lab3_z1.c:3) [15]  (0 ns)
+	'add' operation ('add_ln7', ./source/lab3_z1.c:7) [22]  (2.7 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

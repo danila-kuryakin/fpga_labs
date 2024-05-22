@@ -1,0 +1,68 @@
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Mon Oct 17 19:44:04 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/new'
+Sourcing Tcl script 'D:/Labs/3sem/FPGA/new/lab2_z0/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project lab2_z0 
+INFO: [HLS 200-10] Opening project 'D:/Labs/3sem/FPGA/new/lab2_z0'.
+INFO: [HLS 200-1510] Running: set_top lab2_z0 
+INFO: [HLS 200-1510] Running: add_files lab2_z0/source/lab2_z0.c 
+INFO: [HLS 200-10] Adding design file 'lab2_z0/source/lab2_z0.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb lab2_z0/source/lab2_z0_test.c 
+INFO: [HLS 200-10] Adding test bench file 'lab2_z0/source/lab2_z0_test.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Labs/3sem/FPGA/new/lab2_z0/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 907.695 MB.
+INFO: [HLS 200-10] Analyzing design file 'lab2_z0/source/lab2_z0.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.063 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.796 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'lab2_z0' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lab2_z0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 1.077 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lab2_z0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'lab2_z0/in_a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lab2_z0/in_b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'lab2_z0/res' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'lab2_z0' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lab2_z0'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.222 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 1.077 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for lab2_z0.
+INFO: [VLOG 209-307] Generating Verilog RTL for lab2_z0.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 232.67 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.863 seconds; current allocated memory: 208.086 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.952 seconds; peak allocated memory: 1.077 GB.

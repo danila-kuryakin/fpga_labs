@@ -1,0 +1,11 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_data_in.v"
+sv xil_defaultlib "AESL_automem_data_out1.v"
+sv xil_defaultlib "AESL_automem_data_out2.v"
+sv xil_defaultlib "foo_m.autotb.v"
+sv xil_defaultlib "foo_m.v"
+sv xil_defaultlib "foo_m_mul_32s_32s_32_5_1.v"
+sv xil_defaultlib "foo_m_mul_32s_6ns_32_5_1.v"
+sv xil_defaultlib "foo_m_temp1_RAM_AUTO_1R1W.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

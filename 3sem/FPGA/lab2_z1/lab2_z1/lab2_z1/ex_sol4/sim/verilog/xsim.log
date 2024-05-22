@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# xsim v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Oct 18 15:49:03 2022
+# Process ID: 15632
+# Current directory: D:/Labs/3sem/FPGA/lab2_z1/lab2_z1/lab2_z1/ex_sol4/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/lab2_z1/xsim_script.tcl}
+# Log file: D:/Labs/3sem/FPGA/lab2_z1/lab2_z1/lab2_z1/ex_sol4/sim/verilog/xsim.log
+# Journal file: D:/Labs/3sem/FPGA/lab2_z1/lab2_z1/lab2_z1/ex_sol4/sim/verilog\xsim.jou
+# Running On: DESKTOP-D9BK5M4, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
+#-----------------------------------------------------------
+source xsim.dir/lab2_z1/xsim_script.tcl
+# xsim {lab2_z1} -view {{lab2_z1_dataflow_ana.wcfg}} -tclbatch {lab2_z1.tcl} -protoinst {lab2_z1.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file lab2_z1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_lab2_z1_top/AESL_inst_lab2_z1//AESL_inst_lab2_z1_activity
+Time resolution is 1 ps
+open_wave_config lab2_z1_dataflow_ana.wcfg
+source lab2_z1.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_return -into $return_group -radix hex
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $cinputgroup]
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/in_r -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_start -into $blocksiggroup
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_done -into $blocksiggroup
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_idle -into $blocksiggroup
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_lab2_z1_top/AESL_inst_lab2_z1/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_lab2_z1_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_lab2_z1_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_lab2_z1_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_lab2_z1_top/LENGTH_in_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_lab2_z1_top/LENGTH_ap_return -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(axi_slave) -into $tbcoutputgroup]
+## add_wave /apatb_lab2_z1_top/ap_return -into $tb_return_group -radix hex
+## add_wave /apatb_lab2_z1_top/ap_local_deadlock -into $tb_return_group -radix hex
+## add_wave /apatb_lab2_z1_top/ap_local_block -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(wire) -into $tbcinputgroup]
+## add_wave /apatb_lab2_z1_top/in_r -into $tb_return_group -radix hex
+## save_wave_config lab2_z1.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [0.00%] @ "180000"
+// RTL Simulation : 1 / 3 [100.00%] @ "940000"
+// RTL Simulation : 2 / 3 [100.00%] @ "1300000"
+// RTL Simulation : 3 / 3 [100.00%] @ "1740000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1980 ns : File "D:/Labs/3sem/FPGA/lab2_z1/lab2_z1/lab2_z1/ex_sol4/sim/verilog/lab2_z1.autotb.v" Line 263
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Oct 18 15:49:05 2022...

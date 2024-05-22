@@ -1,0 +1,115 @@
+
+
+================================================================
+== Synthesis Summary Report of 'lab4_z1'
+================================================================
++ General Information: 
+    * Date:           Tue Nov  8 10:49:25 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        lab4_z1
+    * Solution:       solution2 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xa7a12t-csg325-1Q
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |         Modules         | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |        |          |          |     |
+    |         & Loops         | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT   | URAM|
+    +-------------------------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |+ lab4_z1                |     -|  4.75|       53|  530.000|         -|       54|     -|        no|     -|  1 (2%)|  266 (1%)|  238 (2%)|    -|
+    | o L2                    |     -|  9.00|       52|  520.000|        13|        -|     4|        no|     -|       -|         -|         -|    -|
+    |  + lab4_z1_Pipeline_L1  |     -|  4.75|        9|   90.000|         -|        9|     -|        no|     -|  1 (2%)|  207 (1%)|  149 (1%)|    -|
+    |   o L1                  |     -|  9.00|        7|   70.000|         5|        1|     4|       yes|     -|       -|         -|         -|    -|
+    +-------------------------+------+------+---------+---------+----------+---------+------+----------+------+--------+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++---------------------------+----------+
+| Interface                 | Bitwidth |
++---------------------------+----------+
+| firstVector_arr_address0  | 2        |
+| firstVector_arr_q0        | 16       |
+| resultVecror_arr_address0 | 2        |
+| resultVecror_arr_d0       | 32       |
+| resultVecror_arr_q0       | 32       |
+| secondVector_arr_address0 | 2        |
+| secondVector_arr_q0       | 16       |
++---------------------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------------+-----------+----------+
+| Argument         | Direction | Datatype |
++------------------+-----------+----------+
+| firstVector_arr  | in        | short*   |
+| secondVector_arr | in        | short*   |
+| resultVecror_arr | inout     | int*     |
++------------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------------+---------------------------+---------+----------+
+| Argument         | HW Interface              | HW Type | HW Usage |
++------------------+---------------------------+---------+----------+
+| firstVector_arr  | firstVector_arr_address0  | port    | offset   |
+| firstVector_arr  | firstVector_arr_ce0       | port    |          |
+| firstVector_arr  | firstVector_arr_q0        | port    |          |
+| secondVector_arr | secondVector_arr_address0 | port    | offset   |
+| secondVector_arr | secondVector_arr_ce0      | port    |          |
+| secondVector_arr | secondVector_arr_q0       | port    |          |
+| resultVecror_arr | resultVecror_arr_address0 | port    | offset   |
+| resultVecror_arr | resultVecror_arr_ce0      | port    |          |
+| resultVecror_arr | resultVecror_arr_we0      | port    |          |
+| resultVecror_arr | resultVecror_arr_d0       | port    |          |
+| resultVecror_arr | resultVecror_arr_q0       | port    |          |
++------------------+---------------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                                 | DSP | Pragma | Variable | Op  | Impl   | Latency |
++--------------------------------------+-----+--------+----------+-----+--------+---------+
+| + lab4_z1                            | 1   |        |          |     |        |         |
+|   add_ln9_fu_97_p2                   | -   |        | add_ln9  | add | fabric | 0       |
+|  + lab4_z1_Pipeline_L1               | 1   |        |          |     |        |         |
+|    add_ln12_fu_125_p2                | -   |        | add_ln12 | add | fabric | 0       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U1 | 1   |        | mul_ln14 | mul | dsp    | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U1 | 1   |        | add_ln14 | add | dsp    | 3       |
++--------------------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+----------------------+
+| Type     | Options | Location             |
++----------+---------+----------------------+
+| pipeline | II=1    | DIRECTIVE in lab4_z1 |
++----------+---------+----------------------+
+
+

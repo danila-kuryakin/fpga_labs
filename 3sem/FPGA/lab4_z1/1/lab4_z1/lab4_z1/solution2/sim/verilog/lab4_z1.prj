@@ -1,0 +1,11 @@
+sv work "glbl.v"
+sv xil_defaultlib "lab4_z1.autotb.v"
+sv xil_defaultlib "AESL_automem_firstVector_arr.v"
+sv xil_defaultlib "AESL_automem_secondVector_arr.v"
+sv xil_defaultlib "AESL_automem_resultVecror_arr.v"
+sv xil_defaultlib "lab4_z1_lab4_z1_Pipeline_L1.v"
+sv xil_defaultlib "lab4_z1.v"
+sv xil_defaultlib "lab4_z1_flow_control_loop_pipe_sequential_init.v"
+sv xil_defaultlib "lab4_z1_mac_muladd_16s_16s_32ns_32_4_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

@@ -1,0 +1,47 @@
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Fri Dec 09 09:20:01 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab4_z1'
+Sourcing Tcl script 'D:/Labs/3sem/FPGA/lab4_z1/lab4_z1/sol4/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project lab4_z1 
+INFO: [HLS 200-10] Opening project 'D:/Labs/3sem/FPGA/lab4_z1/lab4_z1'.
+INFO: [HLS 200-1510] Running: set_top lab4_z1 
+INFO: [HLS 200-1510] Running: add_files ./source/lab4_z1.c 
+INFO: [HLS 200-10] Adding design file './source/lab4_z1.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb source/lab4_z1_test.c -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'source/lab4_z1_test.c' to the project
+INFO: [HLS 200-1510] Running: open_solution sol4 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Labs/3sem/FPGA/lab4_z1/lab4_z1/sol4'.
+INFO: [SYN 201-201] Setting up clock 'clk' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'clk' with an uncertainty of 1ns.
+INFO: [HLS 200-1611] Setting target device to 'xa7a12t-csg325-1Q'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xa7a12t-csg325-1Q 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name clk 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -off lab4_z1/L1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 -rewind lab4_z1/L2 
+INFO: [HLS 200-1510] Running: set_directive_top -name lab4_z1 lab4_z1 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../source/lab4_z1_test.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Fri Dec 09 09:20:03 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab4_z1/lab4_z1/sol4/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.621 seconds; peak allocated memory: 2.395 MB.
+   Compiling(apcc) ../../../../source/lab4_z1.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Fri Dec 09 09:20:08 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab4_z1/lab4_z1/sol4/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.489 seconds; peak allocated memory: 2.637 MB.
+   Generating csim.exe
+----------Pass!------------ 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.154 seconds; current allocated memory: 257.793 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.156 seconds; peak allocated memory: 1.076 GB.

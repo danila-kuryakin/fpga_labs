@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database lab3_z2.wdb

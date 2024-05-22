@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln5_fu_64_p2" SOURCE="source/lab1_z1.c:5" VARIABLE="add_ln5" MODULE="lab1_z1" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="tadder" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="add_ln5_1_fu_74_p2" SOURCE="source/lab1_z1.c:5" VARIABLE="add_ln5_1" MODULE="lab1_z1" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="tadder" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="y_fu_80_p2" SOURCE="source/lab1_z1.c:5" VARIABLE="y" MODULE="lab1_z1" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

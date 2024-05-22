@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="tmp4_fu_303_p2" SOURCE="" VARIABLE="tmp4" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="tmp5_fu_313_p2" SOURCE="./source/lab4_z1.c:8" VARIABLE="tmp5" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" SOURCE="./source/lab4_z1.c:8" VARIABLE="tmp2" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sext" ID="" IMPL="dsp" LATENCY="3" OPTYPE="sext" PRAGMA="" RTLNAME="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" SOURCE="./source/lab4_z1.c:8" VARIABLE="tmp2_cast" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" SOURCE="./source/lab4_z1.c:8" VARIABLE="tmp3" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="ama_addmuladd_17s_17s_16s_32ns_32_4_1_U1" SOURCE="./source/lab4_z1.c:12" VARIABLE="add_ln12" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_280_p2" SOURCE="./source/lab4_z1.c:8" VARIABLE="i" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln8_fu_274_p2" SOURCE="./source/lab4_z1.c:8" VARIABLE="icmp_ln8" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

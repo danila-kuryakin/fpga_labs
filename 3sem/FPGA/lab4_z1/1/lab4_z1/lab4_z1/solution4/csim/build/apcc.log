@@ -1,0 +1,6 @@
+INFO: [HLS 200-10] Running 'E:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Natalie' on host 'molnevia-nat' (Windows NT_amd64 version 6.2) on Mon Nov 07 23:49:57 +0300 2022
+INFO: [HLS 200-10] In directory 'E:/Xilinx_trn/lab4_z1/lab4_z1/solution4/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.69 seconds; peak allocated memory: 2.738 MB.

@@ -1,0 +1,664 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Programs/Xilinx/Vitis_HLS/2021.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:19:46 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1'
+Sourcing Tcl script 'lab5_z1.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset lab5_z1 
+INFO: [HLS 200-10] Opening and resetting project 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1'.
+WARNING: [HLS 200-40] No D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sol1.aps file found.
+WARNING: [HLS 200-40] No D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sol2.aps file found.
+WARNING: [HLS 200-40] No D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sol3.aps file found.
+INFO: [HLS 200-1510] Running: add_files ./source/lab5_z1.c 
+INFO: [HLS 200-10] Adding design file './source/lab5_z1.c' to the project
+INFO: [HLS 200-1510] Running: set_top foo_m 
+INFO: [HLS 200-1510] Running: add_files -tb ./source/lab5_z1_test.c 
+INFO: [HLS 200-10] Adding test bench file './source/lab5_z1_test.c' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset sol1 
+INFO: [HLS 200-10] Creating and opening solution 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sol1.aps file found.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: create_clock -period 6 -name clk 
+INFO: [SYN 201-201] Setting up clock 'clk' with a period of 6ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1 
+INFO: [SYN 201-201] Setting up clock 'clk' with an uncertainty of 1ns.
+INFO: [HLS 200-1510] Running: set_part xa7a12tcsg325-1Q 
+INFO: [HLS 200-1611] Setting target device to 'xa7a12t-csg325-1Q'
+INFO: [HLS 200-1510] Running: csim_design -clean 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../source/lab5_z1_test.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:19:48 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.696 seconds; peak allocated memory: 2.199 MB.
+   Compiling(apcc) ../../../../source/lab5_z1.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:19:53 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.66 seconds; peak allocated memory: 2.496 MB.
+   Generating csim.exe
+----------Pass!------------ 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.037 seconds; current allocated memory: 374.965 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Analyzing design file './source/lab5_z1.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.601 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-178] Inlining function 'Split' into 'foo_m' (./source/lab5_z1.c:17:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.234 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.239 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.304 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'temp1' (./source/lab5_z1.c:24:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp2' (./source/lab5_z1.c:11:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp3' (./source/lab5_z1.c:12:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'foo_m' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'foo_m' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 1.073 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'foo_m' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_in' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_out1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_out2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'foo_m' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_6ns_32_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'foo_m'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.163 seconds; current allocated memory: 1.073 GB.
+INFO: [RTMG 210-278] Implementing memory 'foo_m_temp1_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.434 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.273 seconds; current allocated memory: 1.073 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for foo_m.
+INFO: [VLOG 209-307] Generating Verilog RTL for foo_m.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 256.74 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.946 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design -trace_level port -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_foo_m.cpp
+   Compiling (apcc) lab5_z1_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:20:07 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.503 seconds; peak allocated memory: 2.379 MB.
+   Compiling (apcc) lab5_z1.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:20:12 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.489 seconds; peak allocated memory: 2.348 MB.
+   Compiling apatb_foo_m_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+----------Pass!------------ 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol1\sim\verilog>set PATH= 
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol1\sim\verilog>call C:/Programs/Xilinx/Vivado/2021.2/bin/xelab xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries  -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib "ieee_proposed=./ieee_proposed" -s foo_m -debug wave 
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s foo_m -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/AESL_automem_data_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/AESL_automem_data_out1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/AESL_automem_data_out2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/foo_m.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_foo_m_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/foo_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/foo_m_mul_32s_32s_32_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_32s_32_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/foo_m_mul_32s_6ns_32_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_6ns_32_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/foo_m_temp1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_temp1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.foo_m_temp1_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.foo_m_mul_32s_32s_32_5_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m_mul_32s_6ns_32_5_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m
+Compiling module xil_defaultlib.AESL_automem_data_in
+Compiling module xil_defaultlib.AESL_automem_data_out1
+Compiling module xil_defaultlib.AESL_automem_data_out2
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=24)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_foo_m_top
+Compiling module work.glbl
+Built simulation snapshot foo_m
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/foo_m/xsim_script.tcl
+# xsim {foo_m} -view {{foo_m_dataflow_ana.wcfg}} -tclbatch {foo_m.tcl} -protoinst {foo_m.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file foo_m.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_foo_m_top/AESL_inst_foo_m//AESL_inst_foo_m_activity
+Time resolution is 1 ps
+open_wave_config foo_m_dataflow_ana.wcfg
+source foo_m.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_foo_m_top/AESL_inst_foo_m/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/scale -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_q0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_start -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_done -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_idle -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_clk -into $clockgroup
+## save_wave_config foo_m.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [0.00%] @ "117000"
+// RTL Simulation : 1 / 2 [100.00%] @ "2261145000"
+// RTL Simulation : 2 / 2 [100.00%] @ "4522167000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4522203 ns : File "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol1/sim/verilog/foo_m.autotb.v" Line 388
+run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1180.602 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec 11 09:20:46 2022...
+INFO: [COSIM 212-316] Starting C post checking ...
+----------Pass!------------ 
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 43.032 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: open_solution -reset sol2 
+INFO: [HLS 200-10] Creating and opening solution 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sol2.aps file found.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name clk 
+INFO: [SYN 201-201] Setting up clock 'clk' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1 
+INFO: [SYN 201-201] Setting up clock 'clk' with an uncertainty of 1ns.
+INFO: [HLS 200-1510] Running: set_part xa7a12tcsg325-1Q 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Analyzing design file './source/lab5_z1.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.593 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-178] Inlining function 'Split' into 'foo_m' (./source/lab5_z1.c:17:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.191 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.169 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'temp1' (./source/lab5_z1.c:24:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp2' (./source/lab5_z1.c:11:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp3' (./source/lab5_z1.c:12:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'foo_m' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'foo_m' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.073 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'foo_m' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_in' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_out1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_out2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'foo_m' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_6ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'foo_m'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.073 GB.
+INFO: [RTMG 210-278] Implementing memory 'foo_m_temp1_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.468 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.282 seconds; current allocated memory: 1.073 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for foo_m.
+INFO: [VLOG 209-307] Generating Verilog RTL for foo_m.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.06 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 5.7 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design -trace_level port -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_foo_m.cpp
+   Compiling (apcc) lab5_z1_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:20:57 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.447 seconds; peak allocated memory: 2.641 MB.
+   Compiling (apcc) lab5_z1.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:21:01 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.404 seconds; peak allocated memory: 2.297 MB.
+   Compiling apatb_foo_m_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+----------Pass!------------ 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol2\sim\verilog>set PATH= 
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol2\sim\verilog>call C:/Programs/Xilinx/Vivado/2021.2/bin/xelab xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries  -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib "ieee_proposed=./ieee_proposed" -s foo_m -debug wave 
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s foo_m -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/AESL_automem_data_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/AESL_automem_data_out1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/AESL_automem_data_out2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_foo_m_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m_mul_32s_32s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_32s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m_mul_32s_6ns_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_6ns_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m_temp1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_temp1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.foo_m_temp1_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.foo_m_mul_32s_32s_32_1_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m_mul_32s_6ns_32_1_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m
+Compiling module xil_defaultlib.AESL_automem_data_in
+Compiling module xil_defaultlib.AESL_automem_data_out1
+Compiling module xil_defaultlib.AESL_automem_data_out2
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=14)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_foo_m_top
+Compiling module work.glbl
+Built simulation snapshot foo_m
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/foo_m/xsim_script.tcl
+# xsim {foo_m} -view {{foo_m_dataflow_ana.wcfg}} -tclbatch {foo_m.tcl} -protoinst {foo_m.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file foo_m.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_foo_m_top/AESL_inst_foo_m//AESL_inst_foo_m_activity
+Time resolution is 1 ps
+open_wave_config foo_m_dataflow_ana.wcfg
+source foo_m.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_foo_m_top/AESL_inst_foo_m/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/scale -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_q0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_start -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_done -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_idle -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_clk -into $clockgroup
+## save_wave_config foo_m.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [0.00%] @ "125000"
+// RTL Simulation : 1 / 2 [100.00%] @ "2130105000"
+// RTL Simulation : 2 / 2 [100.00%] @ "4260075000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4260135 ns : File "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m.autotb.v" Line 388
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1180.461 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec 11 09:21:25 2022...
+INFO: [COSIM 212-316] Starting C post checking ...
+----------Pass!------------ 
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 33.2 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: open_solution -reset sol3 
+INFO: [HLS 200-10] Creating and opening solution 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sol3.aps file found.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: create_clock -period 14 -name clk 
+INFO: [SYN 201-201] Setting up clock 'clk' with a period of 14ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1 
+INFO: [SYN 201-201] Setting up clock 'clk' with an uncertainty of 1ns.
+INFO: [HLS 200-1510] Running: set_part xa7a12tcsg325-1Q 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Analyzing design file './source/lab5_z1.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.571 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-178] Inlining function 'Split' into 'foo_m' (./source/lab5_z1.c:17:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.228 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'temp1' (./source/lab5_z1.c:24:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp2' (./source/lab5_z1.c:11:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp3' (./source/lab5_z1.c:12:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'foo_m' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'foo_m' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.147 seconds; current allocated memory: 1.073 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'foo_m' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_in' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_out1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'foo_m/data_out2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'foo_m' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_6ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'foo_m'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 1.073 GB.
+INFO: [RTMG 210-278] Implementing memory 'foo_m_temp1_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.467 seconds; current allocated memory: 1.073 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.463 seconds; current allocated memory: 1.073 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for foo_m.
+INFO: [VLOG 209-307] Generating Verilog RTL for foo_m.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 85.27 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.816 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: cosim_design -trace_level port -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_foo_m.cpp
+   Compiling (apcc) lab5_z1_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:21:36 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.526 seconds; peak allocated memory: 2.547 MB.
+   Compiling (apcc) lab5_z1.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sun Dec 11 09:21:40 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.378 seconds; peak allocated memory: 2.941 MB.
+   Compiling apatb_foo_m_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+----------Pass!------------ 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol3\sim\verilog>set PATH= 
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol3\sim\verilog>call C:/Programs/Xilinx/Vivado/2021.2/bin/xelab xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries  -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib "ieee_proposed=./ieee_proposed" -s foo_m -debug wave 
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s foo_m -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/AESL_automem_data_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/AESL_automem_data_out1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/AESL_automem_data_out2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/foo_m.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_foo_m_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/foo_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/foo_m_mul_32s_32s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_32s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/foo_m_mul_32s_6ns_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_6ns_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/foo_m_temp1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_temp1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.foo_m_temp1_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.foo_m_mul_32s_32s_32_1_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m_mul_32s_6ns_32_1_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m
+Compiling module xil_defaultlib.AESL_automem_data_in
+Compiling module xil_defaultlib.AESL_automem_data_out1
+Compiling module xil_defaultlib.AESL_automem_data_out2
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=11)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_foo_m_top
+Compiling module work.glbl
+Built simulation snapshot foo_m
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/foo_m/xsim_script.tcl
+# xsim {foo_m} -view {{foo_m_dataflow_ana.wcfg}} -tclbatch {foo_m.tcl} -protoinst {foo_m.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file foo_m.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_foo_m_top/AESL_inst_foo_m//AESL_inst_foo_m_activity
+Time resolution is 1 ps
+open_wave_config foo_m_dataflow_ana.wcfg
+source foo_m.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_foo_m_top/AESL_inst_foo_m/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/scale -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_q0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_start -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_done -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_idle -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_clk -into $clockgroup
+## save_wave_config foo_m.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [0.00%] @ "133000"
+// RTL Simulation : 1 / 2 [100.00%] @ "2293977000"
+// RTL Simulation : 2 / 2 [100.00%] @ "4587807000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4587891 ns : File "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol3/sim/verilog/foo_m.autotb.v" Line 388
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.457 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec 11 09:22:00 2022...
+INFO: [COSIM 212-316] Starting C post checking ...
+----------Pass!------------ 
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 29.16 seconds; current allocated memory: 0.000 MB.
+[2Kvitis_hls> [11CINFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 1368.72 seconds; peak allocated memory: 1.073 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Dec 11 09:42:34 2022...

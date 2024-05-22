@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'lab4_z1' (loop 'L2'): Unable to schedule 'load' operation ('firstVector_arr_load_1') on array 'firstVector_arr' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'firstVector_arr'.&#xD;&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-885.html" projectName="lab4_z1" solutionName="solution4" date="2022-11-08T11:11:01.080+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'L2' (./source/lab4_z1.c:6:6) in function 'lab4_z1' the outer loop is not a perfect loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="lab4_z1" solutionName="solution3" date="2022-11-08T11:01:25.979+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'L2' (./source/lab4_z1.c:6:6) in function 'lab4_z1' the outer loop is not a perfect loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="lab4_z1" solutionName="solution2" date="2022-11-08T10:49:24.166+0300" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="lab4_z1" solutionName="solution4" date="2022-11-08T11:11:10.176+0300" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

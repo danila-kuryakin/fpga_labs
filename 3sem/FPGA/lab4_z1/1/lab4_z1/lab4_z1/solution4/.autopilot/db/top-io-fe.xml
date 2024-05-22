@@ -1,0 +1,24 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="lab4_z1" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="firstVector_arr" src_type="short*" src_isptr="1" src_bitwidth="16" src_size_or_depth="4">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="firstVector_arr" hw_bitwidth="16" hw_size_or_depth="4">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="r" src_name="secondVector_arr" src_type="short*" src_isptr="1" src_bitwidth="16" src_size_or_depth="4">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="secondVector_arr" hw_bitwidth="16" hw_size_or_depth="4">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="rw" src_name="resultVecror_arr" src_type="int*" src_isptr="1" src_bitwidth="32" src_size_or_depth="4">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="resultVecror_arr" hw_bitwidth="32" hw_size_or_depth="4">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0"/>
+    </return>
+  </kernel>
+</root>

@@ -1,0 +1,20 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../source/lab4_z1_test.c in debug mode
+INFO: [HLS 200-10] Running 'E:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Natalie' on host 'molnevia-nat' (Windows NT_amd64 version 6.2) on Mon Nov 07 23:48:30 +0300 2022
+INFO: [HLS 200-10] In directory 'E:/Xilinx_trn/lab4_z1/lab4_z1/solution2/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.936 seconds; peak allocated memory: 2.449 MB.
+   Compiling(apcc) ../../../../source/lab4_z1.c in debug mode
+INFO: [HLS 200-10] Running 'E:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Natalie' on host 'molnevia-nat' (Windows NT_amd64 version 6.2) on Mon Nov 07 23:48:35 +0300 2022
+INFO: [HLS 200-10] In directory 'E:/Xilinx_trn/lab4_z1/lab4_z1/solution2/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.999 seconds; peak allocated memory: 2.328 MB.
+   Generating csim.exe
+----------Pass!------------ 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_1_U1" SOURCE="lab3_z1/source/lab3_z1.c:6" VARIABLE="temp" MODULE="lab3_z1" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="res" SOURCE="lab3_z1/source/lab3_z1.c:7" VARIABLE="add_ln7" MODULE="lab3_z1" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

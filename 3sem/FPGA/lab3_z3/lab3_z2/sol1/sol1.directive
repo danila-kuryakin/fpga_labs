@@ -1,0 +1,21 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="lab3_z2" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_fifo" value="" positionalBoolean="mode"/>
+                <option name="port" positionalBoolean="4" value="inA_ar"/>
+            </pragma>
+        </directive>
+        <directive functionName="lab3_z2" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="lab3_z2"/>
+            </pragma>
+        </directive>
+        <directive functionName="lab3_z2" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="lab3_z2"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

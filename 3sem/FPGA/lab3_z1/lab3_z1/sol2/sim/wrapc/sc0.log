@@ -1,0 +1,22 @@
+   Build using "C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_lab3_z1.cpp
+   Compiling (apcc) lab3_z1.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sat Oct 29 00:45:03 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab3_z1/lab3_z1/sol2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.554 seconds; peak allocated memory: 2.191 MB.
+   Compiling (apcc) lab3_z1_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Sat Oct 29 00:45:07 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab3_z1/lab3_z1/sol2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.515 seconds; peak allocated memory: 2.184 MB.
+   Compiling apatb_lab3_z1_ir.ll
+   Generating cosim.tv.exe

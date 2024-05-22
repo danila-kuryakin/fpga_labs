@@ -1,0 +1,78 @@
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Tue Oct 18 14:07:04 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab2_z1'
+Sourcing Tcl script 'D:/Labs/3sem/FPGA/lab2_z1/lab2_z1/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project lab2_z1 
+INFO: [HLS 200-10] Opening project 'D:/Labs/3sem/FPGA/lab2_z1/lab2_z1'.
+INFO: [HLS 200-1510] Running: set_top lab2_z1 
+INFO: [HLS 200-1510] Running: add_files lab2_z1/source/lab2_z1.c 
+INFO: [HLS 200-10] Adding design file 'lab2_z1/source/lab2_z1.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb lab2_z1/source/lab2_z1_test.c 
+INFO: [HLS 200-10] Adding test bench file 'lab2_z1/source/lab2_z1_test.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Labs/3sem/FPGA/lab2_z1/lab2_z1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-1611] Setting target device to 'xa7a12t-csg325-1Q'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xa7a12tcsg325-1Q 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 867.125 MB.
+INFO: [HLS 200-10] Analyzing design file 'lab2_z1/source/lab2_z1.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.046 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.077 GB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_6_1' (lab2_z1/source/lab2_z1.c:5) in function 'lab2_z1' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'lab2_z1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lab2_z1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_6_1'.
+WARNING: [HLS 200-880] The II Violation in module 'lab2_z1' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('res_write_ln8', lab2_z1/source/lab2_z1.c:8) of variable 'res', lab2_z1/source/lab2_z1.c:8 on local variable 'res' and 'load' operation ('res_load', lab2_z1/source/lab2_z1.c:8) on local variable 'res'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'lab2_z1' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('res_write_ln8', lab2_z1/source/lab2_z1.c:8) of variable 'res', lab2_z1/source/lab2_z1.c:8 on local variable 'res' and 'load' operation ('res_load', lab2_z1/source/lab2_z1.c:8) on local variable 'res'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'lab2_z1' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('res_write_ln8', lab2_z1/source/lab2_z1.c:8) of variable 'res', lab2_z1/source/lab2_z1.c:8 on local variable 'res' and 'load' operation ('res_load', lab2_z1/source/lab2_z1.c:8) on local variable 'res'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'lab2_z1' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('res_write_ln8', lab2_z1/source/lab2_z1.c:8) of variable 'res', lab2_z1/source/lab2_z1.c:8 on local variable 'res' and 'load' operation ('res_load', lab2_z1/source/lab2_z1.c:8) on local variable 'res'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 6, loop 'VITIS_LOOP_6_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 1.077 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lab2_z1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'lab2_z1/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'lab2_z1' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'lab2_z1' pipeline 'VITIS_LOOP_6_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_32s_32_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lab2_z1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.244 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.162 seconds; current allocated memory: 1.077 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for lab2_z1.
+INFO: [VLOG 209-307] Generating Verilog RTL for lab2_z1.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 250.63 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.368 seconds; current allocated memory: 244.699 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.304 seconds; peak allocated memory: 1.077 GB.

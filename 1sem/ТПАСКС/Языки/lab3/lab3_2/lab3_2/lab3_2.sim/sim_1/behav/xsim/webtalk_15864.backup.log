@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Nov 21 08:00:44 2021
+# Process ID: 15864
+# Current directory: D:/Project/Xiling/vivado 2018/llab3/lab3_2/lab3_2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Project/Xiling/vivado 2018/llab3/lab3_2/lab3_2.sim/sim_1/behav/xsim/xsim.dir/tb3_2_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Project/Xiling/vivado 2018/llab3/lab3_2/lab3_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Project/Xiling/vivado 2018/llab3/lab3_2/lab3_2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Project/Xiling/vivado -notrace
+invalid command name "******"
+ambiguous command name "******": after append apply array auto_execok auto_import auto_load auto_load_index auto_qualify binary break case catch cd chan clock close close_msg_db cmd concat config_webtalk continue create_gui_custom_command create_gui_custom_command_arg create_msg_db create_property dict encoding eof error eval exec exit expr fblocked fconfigure fcopy file fileevent flush for foreach format get_gui_custom_command_args get_gui_custom_commands get_msg_config get_param get_property gets glob global help history if incr info interp join lappend lassign lindex linsert lint_files list list_param list_property list_property_value llength load load_msg_db lrange lrepeat lreplace lreverse lsearch lset lsort namespace open package pid proc puts pwd read regexp register_proc regsub remove_gui_custom_command_args remove_gui_custom_commands rename report_environment report_param report_property reset_msg_config reset_msg_count reset_param reset_property return scan seek send_msg_id set set_msg_config set_param set_property socket source split string subst switch tclLog tell time trace unknown unload unregister_proc unset update uplevel upvar variable version vwait webtalk_add_data webtalk_dump_data webtalk_init webtalk_register_client webtalk_terminate webtalk_transmit while
+    while executing
+"****** Webtalk v2018.1 (64-bit)"
+    (file "D:/Project/Xiling/vivado" line 2)
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 08:00:44 2021...

@@ -1,0 +1,19 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="ex_sol1"/>
+    </name>
+    <project>
+        <value string="lab2_z0_ex"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xa7a12t:-csg325:-1Q"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/artix7/artix7" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="clk" uncertainty="1" period="5"/>
+    </clockList>
+</AutoPilot:solution>
+

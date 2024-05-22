@@ -1,0 +1,473 @@
+<profile>
+    <ReportVersion>
+        <Version>2021.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xa7a12t-csg325-1Q</Part>
+        <TopModelName>lab3_z2</TopModelName>
+        <TargetClockPeriod>8.00</TargetClockPeriod>
+        <ClockUncertainty>1.00</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.514</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>32769</Best-caseLatency>
+            <Average-caseLatency>32769</Average-caseLatency>
+            <Worst-caseLatency>32769</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.262 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.262 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.262 ms</Worst-caseRealTimeLatency>
+            <Interval-min>32770</Interval-min>
+            <Interval-max>32770</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <VITIS_LOOP_7_1>
+                <TripCount>8192</TripCount>
+                <Latency>32768</Latency>
+                <AbsoluteTimeLatency>262144</AbsoluteTimeLatency>
+                <IterationLatency>4</IterationLatency>
+                <InstanceList/>
+            </VITIS_LOOP_7_1>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>48</FF>
+            <LUT>103</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>40</BRAM_18K>
+            <DSP>40</DSP>
+            <FF>16000</FF>
+            <LUT>8000</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_local_block</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_local_deadlock</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>lab3_z2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inA_ar_address0</name>
+            <Object>inA_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>13</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inA_ar_ce0</name>
+            <Object>inA_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inA_ar_q0</name>
+            <Object>inA_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_ar_address0</name>
+            <Object>out_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>13</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_ar_ce0</name>
+            <Object>out_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_ar_we0</name>
+            <Object>out_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_ar_d0</name>
+            <Object>out_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_ar_q0</name>
+            <Object>out_ar</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>lab3_z2</ModuleName>
+            <BindInstances>add_ln7_fu_89_p2 out_ar_d0</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>lab3_z2</Name>
+            <Loops>
+                <VITIS_LOOP_7_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>8.00</TargetClockPeriod>
+                    <ClockUncertainty>1.00</ClockUncertainty>
+                    <EstimatedClockPeriod>6.514</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>32769</Best-caseLatency>
+                    <Average-caseLatency>32769</Average-caseLatency>
+                    <Worst-caseLatency>32769</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.262 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.262 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.262 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>32770</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_7_1>
+                        <Name>VITIS_LOOP_7_1</Name>
+                        <TripCount>8192</TripCount>
+                        <Latency>32768</Latency>
+                        <AbsoluteTimeLatency>0.262 ms</AbsoluteTimeLatency>
+                        <IterationLatency>4</IterationLatency>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_7_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>48</FF>
+                    <AVAIL_FF>16000</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>103</LUT>
+                    <AVAIL_LUT>8000</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>40</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>40</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_7_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln7_fu_89_p2" SOURCE="./lab3_z2/source/lab3_z2.c:7" URAM="0" VARIABLE="add_ln7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_7_1" OPTYPE="add" PRAGMA="" RTLNAME="out_ar_d0" SOURCE="./lab3_z2/source/lab3_z2.c:11" URAM="0" VARIABLE="add_ln11"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="inA_ar" index="0" direction="in" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="inA_ar_address0" name="inA_ar_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="inA_ar_ce0" name="inA_ar_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="inA_ar_q0" name="inA_ar_q0" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out_ar" index="1" direction="inout" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="out_ar_address0" name="out_ar_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="out_ar_ce0" name="out_ar_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_ar_we0" name="out_ar_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_ar_d0" name="out_ar_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_ar_q0" name="out_ar_q0" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="inA_ar_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="13">
+            <portMaps>
+                <portMap portMapName="inA_ar_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>inA_ar_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="inA_ar"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="inA_ar_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="inA_ar_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>inA_ar_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="inA_ar"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_ar_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="13">
+            <portMaps>
+                <portMap portMapName="out_ar_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_ar_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out_ar"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_ar_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="out_ar_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_ar_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out_ar"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_ar_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="out_ar_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_ar_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out_ar"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table isCollapsed="0">
+                    <keys size="2">Interface, Bitwidth</keys>
+                    <column name="inA_ar_address0">13</column>
+                    <column name="inA_ar_q0">16</column>
+                    <column name="out_ar_address0">13</column>
+                    <column name="out_ar_d0">16</column>
+                    <column name="out_ar_q0">16</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="inA_ar">in, short*</column>
+                    <column name="out_ar">inout, short*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="inA_ar">inA_ar_address0, port, offset</column>
+                    <column name="inA_ar">inA_ar_ce0, port, </column>
+                    <column name="inA_ar">inA_ar_q0, port, </column>
+                    <column name="out_ar">out_ar_address0, port, offset</column>
+                    <column name="out_ar">out_ar_ce0, port, </column>
+                    <column name="out_ar">out_ar_we0, port, </column>
+                    <column name="out_ar">out_ar_d0, port, </column>
+                    <column name="out_ar">out_ar_q0, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <PragmaReport>
+        <Pragma type="pipeline" location="./lab3_z2/source/lab3_z2.c:9" status="valid" parentFunction="lab3_z2" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="./lab3_z2/source/lab3_z2.c:5" status="valid" parentFunction="lab3_z2" variable="" isDirective="1" options="off"/>
+    </PragmaReport>
+</profile>
+

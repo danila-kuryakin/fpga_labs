@@ -1,0 +1,4 @@
+C:\Programs\JetBrains\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Programs/JetBrains/apps/CLion/ch-0/222.4345.21/bin/ninja/win/ninja.exe -G Ninja -S D:\Labs\3sem\FPGA\lab5_z1\test_speed -B D:\Labs\3sem\FPGA\lab5_z1\test_speed\cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Labs/3sem/FPGA/lab5_z1/test_speed/cmake-build-debug

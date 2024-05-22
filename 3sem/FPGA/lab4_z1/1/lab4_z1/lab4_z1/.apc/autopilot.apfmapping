@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="lab4_z1.c" path="E:\Xilinx_trn\lab4_z1\source\lab4_z1.c"/>
+  </source>
+  <testbench>
+    <originFiles name="lab4_z1_test.c" path="E:\Xilinx_trn\lab4_z1\source\lab4_z1_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

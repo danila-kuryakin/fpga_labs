@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="lab3_z1/source/lab3_z1.c" line="4" pragmaType="interface" parentfunction="lab3_z1" mode="ap_ctrl_chain" port="return" name=""/>
+<pragma file="lab3_z1/source/lab3_z1.c" line="5" pragmaType="interface" parentfunction="lab3_z1" mode="ap_hs" port="inA" name="" register="0"/>
+<pragma file="lab3_z1/source/lab3_z1.c" line="5" pragmaType="interface" parentfunction="lab3_z1" mode="ap_hs" port="inB" name="" register="0"/>
+<pragma file="lab3_z1/source/lab3_z1.c" line="5" pragmaType="interface" parentfunction="lab3_z1" mode="ap_hs" port="inC" name="" register="0"/>
+<pragma file="lab3_z1/source/lab3_z1.c" line="5" pragmaType="interface" parentfunction="lab3_z1" mode="ap_hs" port="res" name="" register="0"/>
+</pragmas>

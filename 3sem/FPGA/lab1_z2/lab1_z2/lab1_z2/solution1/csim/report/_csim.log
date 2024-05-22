@@ -1,0 +1,21 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../source/lab1_x2.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Thu Oct 06 20:54:03 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab1_z2/lab1_z2/lab1_z2/solution1/csim/build'
+../../../source/lab1_x2.c:1:9: fatal error: 'lab1_z2.h' file not found
+#include"lab1_z2.h"
+        ^
+1 error generated.
+ERROR: [APCC 202-10] clang compile failed: child process exited abnormally
+ERROR: [APCC 202-1] ProcessSources failed
+INFO: [APCC 202-3] Tmp directory is apcc_db
+ERROR: [APCC 202-1] APCC failed.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.5 seconds; peak allocated memory: 2.625 MB.
+   Generating csim.exe
+Makefile.rules:392: recipe for target 'csim.exe' failed
+g++.exe: error: obj/lab1_x2.o: No such file or directory
+make: *** [csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

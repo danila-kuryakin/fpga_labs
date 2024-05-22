@@ -1,0 +1,4 @@
+<pragmas>
+<pragma file="./source/lab3_z2.c" line="7" pragmaType="pipeline" parentfunction="lab3_z2" off="1" ii="0" rewind="0" style=""/>
+<pragma file="./source/lab3_z2.c" line="4" pragmaType="interface" parentfunction="lab3_z2" mode="ap_fifo" port="inA_ar" register="0" name="" depth="-1"/>
+</pragmas>

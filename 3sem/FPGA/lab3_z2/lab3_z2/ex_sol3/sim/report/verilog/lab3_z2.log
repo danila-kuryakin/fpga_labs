@@ -1,0 +1,152 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Programs/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_lab3_z2.cpp
+   Compiling (apcc) lab3_z2.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Wed Nov 23 07:32:38 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.536 seconds; peak allocated memory: 2.297 MB.
+   Compiling (apcc) lab3_z2_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Programs/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'danil' on host 'desktop-d9bk5m4' (Windows NT_amd64 version 6.2) on Wed Nov 23 07:32:42 +0300 2022
+INFO: [HLS 200-10] In directory 'D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.611 seconds; peak allocated memory: 2.547 MB.
+   Compiling apatb_lab3_z2_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+----------Pass!------------ 
+
+D:\Labs\3sem\FPGA\lab3_z2\lab3_z2\ex_sol3\sim\verilog>set PATH= 
+
+D:\Labs\3sem\FPGA\lab3_z2\lab3_z2\ex_sol3\sim\verilog>call C:/Programs/Xilinx/Vivado/2021.2/bin/xelab xil_defaultlib.apatb_lab3_z2_top glbl -Oenable_linking_all_libraries  -prj lab3_z2.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib "ieee_proposed=./ieee_proposed" -s lab3_z2 -debug wave 
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_lab3_z2_top glbl -Oenable_linking_all_libraries -prj lab3_z2.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s lab3_z2 -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/verilog/AESL_automem_inA_ar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_inA_ar
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/verilog/AESL_automem_out_ar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_out_ar
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/verilog/lab3_z2.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_lab3_z2_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/verilog/lab3_z2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab3_z2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.lab3_z2
+Compiling module xil_defaultlib.AESL_automem_inA_ar
+Compiling module xil_defaultlib.AESL_automem_out_ar
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_lab3_z2_top
+Compiling module work.glbl
+Built simulation snapshot lab3_z2
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/lab3_z2/xsim_script.tcl
+# xsim {lab3_z2} -view {{lab3_z2_dataflow_ana.wcfg}} -tclbatch {lab3_z2.tcl} -protoinst {lab3_z2.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file lab3_z2.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_lab3_z2_top/AESL_inst_lab3_z2//AESL_inst_lab3_z2_activity
+Time resolution is 1 ps
+open_wave_config lab3_z2_dataflow_ana.wcfg
+source lab3_z2.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinoutgroup]
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/out_ar_q0 -into $return_group -radix hex
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/out_ar_d0 -into $return_group -radix hex
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/out_ar_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/out_ar_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/out_ar_address0 -into $return_group -radix hex
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/inA_ar_q0 -into $return_group -radix hex
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/inA_ar_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/inA_ar_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_start -into $blocksiggroup
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_done -into $blocksiggroup
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_idle -into $blocksiggroup
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_lab3_z2_top/AESL_inst_lab3_z2/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_lab3_z2_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_lab3_z2_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_lab3_z2_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_lab3_z2_top/LENGTH_inA_ar -into $tb_portdepth_group -radix hex
+## add_wave /apatb_lab3_z2_top/LENGTH_out_ar -into $tb_portdepth_group -radix hex
+## set tbcinoutgroup [add_wave_group "C InOuts" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinoutgroup]
+## add_wave /apatb_lab3_z2_top/out_ar_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_lab3_z2_top/out_ar_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_lab3_z2_top/out_ar_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab3_z2_top/out_ar_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab3_z2_top/out_ar_address0 -into $tb_return_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(axi_slave) -into $tbcoutputgroup]
+## add_wave /apatb_lab3_z2_top/ap_local_deadlock -into $tb_return_group -radix hex
+## add_wave /apatb_lab3_z2_top/ap_local_block -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinputgroup]
+## add_wave /apatb_lab3_z2_top/inA_ar_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_lab3_z2_top/inA_ar_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_lab3_z2_top/inA_ar_address0 -into $tb_return_group -radix hex
+## save_wave_config lab3_z2.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [0.00%] @ "116000"
+// RTL Simulation : 1 / 3 [100.00%] @ "262284000"
+// RTL Simulation : 2 / 3 [100.00%] @ "524444000"
+// RTL Simulation : 3 / 3 [100.00%] @ "786604000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 786652 ns : File "D:/Labs/3sem/FPGA/lab3_z2/lab3_z2/ex_sol3/sim/verilog/lab3_z2.autotb.v" Line 272
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Nov 23 07:32:56 2022...
+----------Pass!------------ 
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

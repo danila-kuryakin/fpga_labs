@@ -1,0 +1,26 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="ex_sol3"/>
+    </name>
+    <project>
+        <value string="lab2_z0_ex"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <clockList>
+        <clock default="false" name="clk" uncertainty="1" period="7"/>
+    </clockList>
+    <targetInfo>
+        <TargetInfo value="xa7a12t:-csg325:-1Q"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/artix7/artix7" name="DefaultPlatform"/>
+    </libraryList>
+    <Simulation argv="">
+        <SimFlow name="cosim" setup="false" dumpTrace="all" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="xsim">
+            <Rtl name="systemc" active="false"/>
+            <Rtl name="verilog" active="true"/>
+            <Rtl name="vhdl" active="false"/>
+        </SimFlow>
+    </Simulation>
+</AutoPilot:solution>
+

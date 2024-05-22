@@ -1,0 +1,4 @@
+Loop_Loop1_proc_U0,Loop1,seq_loop_status1.csv
+split_U0,L1,seq_loop_status2.csv
+Loop_Loop2_proc_U0,Loop2,seq_loop_status3.csv
+Loop_Loop3_proc_U0,Loop3,seq_loop_status4.csv

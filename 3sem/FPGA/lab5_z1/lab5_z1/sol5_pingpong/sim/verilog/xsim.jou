@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Dec 11 11:13:59 2022
+# Process ID: 14108
+# Current directory: D:/Labs/3sem/FPGA/lab5_z1/lab5_z1/sol5_pingpong/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/foo_m/xsim_script.tcl}
+# Log file: D:/Labs/3sem/FPGA/lab5_z1/lab5_z1/sol5_pingpong/sim/verilog/xsim.log
+# Journal file: D:/Labs/3sem/FPGA/lab5_z1/lab5_z1/sol5_pingpong/sim/verilog\xsim.jou
+# Running On: DESKTOP-D9BK5M4, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34046 MB
+#-----------------------------------------------------------
+source xsim.dir/foo_m/xsim_script.tcl
+open_wave_config foo_m_dataflow_ana.wcfg
+source foo_m.tcl

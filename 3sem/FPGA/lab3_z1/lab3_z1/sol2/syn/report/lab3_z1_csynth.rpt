@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'lab3_z1'
+================================================================
+* Date:           Sat Oct 29 00:44:45 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        lab3_z1
+* Solution:       sol2 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xa7a12t-csg325-1Q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  8.00 ns|  2.702 ns|     1.00 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        4|  32.000 ns|  32.000 ns|    5|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT | URAM|
++-----------------+---------+----+-------+------+-----+
+|DSP              |        -|   1|      -|     -|    -|
+|Expression       |        -|   -|      0|    43|    -|
+|FIFO             |        -|   -|      -|     -|    -|
+|Instance         |        -|   -|      -|     -|    -|
+|Memory           |        -|   -|      -|     -|    -|
+|Multiplexer      |        -|   -|      -|    70|    -|
+|Register         |        -|   -|     54|     -|    -|
++-----------------+---------+----+-------+------+-----+
+|Total            |        0|   1|     54|   113|    0|
++-----------------+---------+----+-------+------+-----+
+|Available        |       40|  40|  16000|  8000|    0|
++-----------------+---------+----+-------+------+-----+
+|Utilization (%)  |        0|   2|     ~0|     1|    0|
++-----------------+---------+----+-------+------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    +---------------------------+------------------------+-----------+
+    |          Instance         |         Module         | Expression|
+    +---------------------------+------------------------+-----------+
+    |mul_mul_16s_16s_32_4_1_U1  |mul_mul_16s_16s_32_4_1  |    i0 * i1|
+    +---------------------------+------------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------+----------+----+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+----+---+----+------------+------------+
+    |res_int_regslice  |         +|   0|  0|  39|          32|          32|
+    |ap_block_state1   |        or|   0|  0|   2|           1|           1|
+    |ap_block_state5   |        or|   0|  0|   2|           1|           1|
+    +------------------+----------+----+---+----+------------+------------+
+    |Total             |          |   0|  0|  43|          34|          34|
+    +------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  25|          6|    1|          6|
+    |ap_done    |   9|          2|    1|          2|
+    |inA_blk_n  |   9|          2|    1|          2|
+    |inB_blk_n  |   9|          2|    1|          2|
+    |inC_blk_n  |   9|          2|    1|          2|
+    |res_blk_n  |   9|          2|    1|          2|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  70|         16|    6|         16|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------+----+----+-----+-----------+
+    |       Name      | FF | LUT| Bits| Const Bits|
+    +-----------------+----+----+-----+-----------+
+    |ap_CS_fsm        |   5|   0|    5|          0|
+    |ap_done_reg      |   1|   0|    1|          0|
+    |inB_read_reg_79  |  16|   0|   16|          0|
+    |temp_reg_94      |  32|   0|   32|          0|
+    +-----------------+----+----+-----+-----------+
+    |Total            |  54|   0|   54|          0|
+    +-----------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+---------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|    Protocol   | Source Object|    C Type    |
++-------------------+-----+-----+---------------+--------------+--------------+
+|ap_local_block     |  out|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_local_deadlock  |  out|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_clk             |   in|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_start           |   in|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_done            |  out|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_continue        |   in|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_chain|       lab3_z1|  return value|
+|ap_return          |  out|   32|  ap_ctrl_chain|       lab3_z1|  return value|
+|inA                |   in|   16|          ap_hs|           inA|        scalar|
+|inA_ap_vld         |   in|    1|          ap_hs|           inA|        scalar|
+|inA_ap_ack         |  out|    1|          ap_hs|           inA|        scalar|
+|inB                |   in|   16|          ap_hs|           inB|        scalar|
+|inB_ap_vld         |   in|    1|          ap_hs|           inB|        scalar|
+|inB_ap_ack         |  out|    1|          ap_hs|           inB|        scalar|
+|inC                |   in|   16|          ap_hs|           inC|       pointer|
+|inC_ap_vld         |   in|    1|          ap_hs|           inC|       pointer|
+|inC_ap_ack         |  out|    1|          ap_hs|           inC|       pointer|
+|res                |  out|   32|          ap_hs|           res|       pointer|
+|res_ap_vld         |  out|    1|          ap_hs|           res|       pointer|
+|res_ap_ack         |   in|    1|          ap_hs|           res|       pointer|
++-------------------+-----+-----+---------------+--------------+--------------+
+

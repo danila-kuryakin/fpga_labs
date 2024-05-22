@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dct.c" path="D:\Labs\3sem\FPGA\lab1_z0\source\dct.c"/>
+  </source>
+  <testbench>
+    <originFiles name="out.golden.dat" path="D:\Labs\3sem\FPGA\lab1_z0\source\out.golden.dat"/>
+    <originFiles name="in.dat" path="D:\Labs\3sem\FPGA\lab1_z0\source\in.dat"/>
+    <originFiles name="dct_test.c" path="D:\Labs\3sem\FPGA\lab1_z0\source\dct_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

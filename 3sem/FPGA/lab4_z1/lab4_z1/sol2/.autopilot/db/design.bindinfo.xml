@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln10_fu_119_p2" SOURCE="./source/lab4_z1.c:10" VARIABLE="icmp_ln10" MODULE="lab4_z1_Pipeline_L1" LOOP="L1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln10_fu_125_p2" SOURCE="./source/lab4_z1.c:10" VARIABLE="add_ln10" MODULE="lab4_z1_Pipeline_L1" LOOP="L1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U1" SOURCE="./source/lab4_z1.c:12" VARIABLE="mul_ln12" MODULE="lab4_z1_Pipeline_L1" LOOP="L1" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U1" SOURCE="./source/lab4_z1.c:12" VARIABLE="add_ln12" MODULE="lab4_z1_Pipeline_L1" LOOP="L1" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln10_1_fu_136_p2" SOURCE="./source/lab4_z1.c:10" VARIABLE="icmp_ln10_1" MODULE="lab4_z1_Pipeline_L1" LOOP="L1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln8_fu_91_p2" SOURCE="./source/lab4_z1.c:8" VARIABLE="icmp_ln8" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln8_fu_97_p2" SOURCE="./source/lab4_z1.c:8" VARIABLE="add_ln8" MODULE="lab4_z1" LOOP="L2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

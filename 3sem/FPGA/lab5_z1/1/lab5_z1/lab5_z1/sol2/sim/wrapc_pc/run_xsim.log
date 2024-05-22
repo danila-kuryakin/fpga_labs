@@ -1,0 +1,108 @@
+----------Pass!------------ 
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol2\sim\verilog>set PATH= 
+
+D:\Labs\3sem\FPGA\lab5_z1\1\lab5_z1\lab5_z1\sol2\sim\verilog>call C:/Programs/Xilinx/Vivado/2021.2/bin/xelab xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries  -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib "ieee_proposed=./ieee_proposed" -s foo_m -debug wave 
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_foo_m_top glbl -Oenable_linking_all_libraries -prj foo_m.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s foo_m -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/AESL_automem_data_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/AESL_automem_data_out1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/AESL_automem_data_out2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data_out2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_foo_m_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m_mul_32s_32s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_32s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m_mul_32s_6ns_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_mul_32s_6ns_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m_temp1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module foo_m_temp1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.foo_m_temp1_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.foo_m_mul_32s_32s_32_1_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m_mul_32s_6ns_32_1_1(NUM_STA...
+Compiling module xil_defaultlib.foo_m
+Compiling module xil_defaultlib.AESL_automem_data_in
+Compiling module xil_defaultlib.AESL_automem_data_out1
+Compiling module xil_defaultlib.AESL_automem_data_out2
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=14)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_foo_m_top
+Compiling module work.glbl
+Built simulation snapshot foo_m
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/foo_m/xsim_script.tcl
+# xsim {foo_m} -view {{foo_m_dataflow_ana.wcfg}} -tclbatch {foo_m.tcl} -protoinst {foo_m.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file foo_m.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_foo_m_top/AESL_inst_foo_m//AESL_inst_foo_m_activity
+Time resolution is 1 ps
+open_wave_config foo_m_dataflow_ana.wcfg
+source foo_m.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_foo_m_top/AESL_inst_foo_m/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out2_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_d0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_out1_address0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/scale -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_q0 -into $return_group -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/data_in_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_start -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_done -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_idle -into $blocksiggroup
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_foo_m_top/AESL_inst_foo_m/ap_clk -into $clockgroup
+## save_wave_config foo_m.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [0.00%] @ "125000"
+// RTL Simulation : 1 / 2 [100.00%] @ "2130105000"
+// RTL Simulation : 2 / 2 [100.00%] @ "4260075000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4260135 ns : File "D:/Labs/3sem/FPGA/lab5_z1/1/lab5_z1/lab5_z1/sol2/sim/verilog/foo_m.autotb.v" Line 388
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1180.461 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec 11 09:21:25 2022...
+----------Pass!------------ 

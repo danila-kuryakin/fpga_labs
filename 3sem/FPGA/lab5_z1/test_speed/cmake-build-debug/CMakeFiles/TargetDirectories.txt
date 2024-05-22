@@ -1,0 +1,3 @@
+D:/Labs/3sem/FPGA/lab5_z1/test_speed/cmake-build-debug/CMakeFiles/test_speed.dir
+D:/Labs/3sem/FPGA/lab5_z1/test_speed/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Labs/3sem/FPGA/lab5_z1/test_speed/cmake-build-debug/CMakeFiles/rebuild_cache.dir

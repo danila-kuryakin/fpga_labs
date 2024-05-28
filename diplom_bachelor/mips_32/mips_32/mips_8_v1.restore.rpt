@@ -1,0 +1,96 @@
+Restore Archived Project report for mips_8_v1
+Thu Jun 03 17:29:11 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Thu Jun 03 17:29:11 2021 ;
+; Revision Name                   ; mips_8_v1                             ;
+; Top-level Entity Name           ; mips_8_v1                             ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'D:/QuartusProject/mips_32/mips_8_v2_84_33.qar' into the 'D:/QuartusProject/mips_32/mips_32/' directory
+Info: Generated report 'mips_8_v1.restore.rpt'
+Info (23030): Evaluation of Tcl script d:/program/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Thu Jun 03 17:29:11 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++---------------------------+
+; Files Restored            ;
++---------------------------+
+; File Name                 ;
++---------------------------+
+; qar_info.json             ;
+; Waveform.vwf              ;
+; assignment_defaults.qdf   ;
+; cpu.v                     ;
+; data.mif                  ;
+; data.qip                  ;
+; data.v                    ;
+; db/stp1_auto_stripped.stp ;
+; inctructions.qip          ;
+; inctructions.v            ;
+; instructions.mif          ;
+; mips_8_v1.qpf             ;
+; mips_8_v1.qsf             ;
+; mips_8_v1.sdc             ;
+; mips_8_v1.v               ;
+; port_ram1.qip             ;
+; port_ram1.v               ;
+; reg_file_ram.hex          ;
+; reg_file_ram.v            ;
+; stp1.stp                  ;
+; tb_mips_8.do              ;
+; tb_ram_file.v             ;
++---------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at cpu.v(329): always construct contains both blocking and non-blocking assignments File: D:/QuartusProject/mips_32/cpu.v Line: 329

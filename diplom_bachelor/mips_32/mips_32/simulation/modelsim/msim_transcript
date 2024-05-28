@@ -1,0 +1,180 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do mips_8_v1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32 {D:/QuartusProject/mips_32/mips_32/reg_file_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:32 on Jun 03,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusProject/mips_32/mips_32" D:/QuartusProject/mips_32/mips_32/reg_file_ram.v 
+# -- Compiling module reg_file_ram
+# 
+# Top level modules:
+# 	reg_file_ram
+# End time: 17:32:33 on Jun 03,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32 {D:/QuartusProject/mips_32/mips_32/mips_8_v1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:33 on Jun 03,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusProject/mips_32/mips_32" D:/QuartusProject/mips_32/mips_32/mips_8_v1.v 
+# -- Compiling module mips_8_v1
+# 
+# Top level modules:
+# 	mips_8_v1
+# End time: 17:32:33 on Jun 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32 {D:/QuartusProject/mips_32/mips_32/inctructions.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:33 on Jun 03,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusProject/mips_32/mips_32" D:/QuartusProject/mips_32/mips_32/inctructions.v 
+# -- Compiling module inctructions
+# 
+# Top level modules:
+# 	inctructions
+# End time: 17:32:33 on Jun 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32 {D:/QuartusProject/mips_32/mips_32/data.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:33 on Jun 03,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusProject/mips_32/mips_32" D:/QuartusProject/mips_32/mips_32/data.v 
+# -- Compiling module data
+# 
+# Top level modules:
+# 	data
+# End time: 17:32:33 on Jun 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32 {D:/QuartusProject/mips_32/mips_32/cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:33 on Jun 03,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusProject/mips_32/mips_32" D:/QuartusProject/mips_32/mips_32/cpu.v 
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 17:32:34 on Jun 03,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32 {D:/QuartusProject/mips_32/mips_32/port_ram1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:34 on Jun 03,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusProject/mips_32/mips_32" D:/QuartusProject/mips_32/mips_32/port_ram1.v 
+# -- Compiling module port_ram1
+# 
+# Top level modules:
+# 	port_ram1
+# End time: 17:32:34 on Jun 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32 {D:/QuartusProject/mips_32/mips_32/tb_ram_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:34 on Jun 03,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QuartusProject/mips_32/mips_32" D:/QuartusProject/mips_32/mips_32/tb_ram_file.v 
+# -- Compiling module tb_ram_file
+# 
+# Top level modules:
+# 	tb_ram_file
+# End time: 17:32:34 on Jun 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_ram_file
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_ram_file 
+# Start time: 17:32:34 on Jun 03,2021
+# Loading work.tb_ram_file
+# Loading work.mips_8_v1
+# Loading work.inctructions
+# Loading altera_mf_ver.altsyncram
+# Loading work.cpu
+# Loading work.reg_file_ram
+# Loading work.port_ram1
+# Loading work.data
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# do D:/QuartusProject/mips_32/mips_32/tb_mips_8.do
+# vsim -gui -l msim_transcript -L altera_mf_ver work.mips_8_v1
+# End time: 17:32:50 on Jun 03,2021, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+# vsim -gui -l msim_transcript -L altera_mf_ver work.mips_8_v1 
+# Start time: 17:32:50 on Jun 03,2021
+# Loading work.mips_8_v1
+# Loading work.inctructions
+# Loading altera_mf_ver.altsyncram
+# Loading work.cpu
+# Loading work.reg_file_ram
+# Loading work.port_ram1
+# Loading work.data
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# WARNING: No extended dataflow license exists
+# add wave -radix hexadecimal /mips_8_v1/clk
+# add wave -radix hexadecimal /mips_8_v1/cpu/need_jump
+# add wave -radix hexadecimal /mips_8_v1/cpu/flag_jamp
+# add wave -radix hexadecimal /mips_8_v1/cpu/address
+# add wave -radix hexadecimal /mips_8_v1/command
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_rden_1
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_addr_1
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_1
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_rden_2
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_addr_2
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_2
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_data_1
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_data_2
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_1_E
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_2_E
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/alu_word 
+# add wave -radix hexadecimal /mips_8_v1/cpu/alu_result
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_addr_1_D
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_addr_2_D
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_write
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_write_dest
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_write_data
+# 
+# add wave -radix hexadecimal /mips_8_v1/dm/rden
+# add wave -radix hexadecimal /mips_8_v1/dm/rdaddress
+# add wave -radix hexadecimal /mips_8_v1/dm/data
+# 
+# add wave -radix hexadecimal /mips_8_v1/dm/wren
+# add wave -radix hexadecimal /mips_8_v1/dm/wraddress
+# add wave -radix hexadecimal /mips_8_v1/dm/q
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_1_E
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_1_M
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_1_W
+# add wave -radix hexadecimal /mips_8_v1/cpu/rf_read_data_2_E
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/r_opcode_D 
+# add wave -radix hexadecimal /mips_8_v1/cpu/r_opcode_E 
+# add wave -radix hexadecimal /mips_8_v1/cpu/r_opcode_M 
+# add wave -radix hexadecimal /mips_8_v1/cpu/r_opcode_W
+# 
+# add wave -radix hexadecimal /mips_8_v1/cpu/num_command_I
+# add wave -radix hexadecimal /mips_8_v1/cpu/num_command_D 
+# add wave -radix hexadecimal /mips_8_v1/cpu/num_command_E 
+# add wave -radix hexadecimal /mips_8_v1/cpu/num_command_M 
+# add wave -radix hexadecimal /mips_8_v1/cpu/num_command_W
+# force -freeze /mips_8_v1/clk 1 0, 0 {20 ps} -r 40
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 3 ns
+# wave zoom full
+# 0 ps
+# 3150 ps
+# End time: 17:33:20 on Jun 03,2021, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0

@@ -1,0 +1,152 @@
+Sun Jun 06 21:53:29 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}
+Sun Jun 06 22:00:49 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}
+Sun Jun 06 22:33:49 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}
+Sun Jun 06 22:51:15 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}
+Sun Jun 06 23:17:36 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}
+Sun Jun 06 23:38:48 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}
+Sun Jun 13 15:56:19 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}
+Sun Jun 13 17:32:41 AST 2021
+Trace back: can't read "tbX(tbf18)": no such element in array
+    while executing
+"lappend orderx($tbX($tb)) $tb"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 34)
+    invoked from within
+"redoPack {Configure Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Configure Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Configure Event}"
+    ("after" script)
+  <2:D:/Program/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "tbX(tbf18)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "tbX(tbf18)": no such element in array}

@@ -1,0 +1,74 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	000  :   87000050;
+	[001..00F]  :   00000000;
+	010  :   0F345004;
+	011  :   0F630001;
+	012  :   0FA73601;
+	013  :   0F833001;
+	[014..015]  :   00000000;
+	016  :   0F633001;
+	017  :   00000000;
+	018  :   0F733002;
+	019  :   00000000;
+	01A  :   0F300000;
+	01B  :   87000010;
+	[01C..01F]  :   00000000;
+	020  :   0F600000;
+	021  :   0F700000;
+	022  :   0F300004;
+	023  :   0F900000;
+	024  :   00000000;
+	025  :   4F600011;
+	026  :   4F70300E;
+	027  :   47300002;
+	[028..02A]  :   00000000;
+	02B  :   0F567000;
+	02C  :   4F900002;
+	02D  :   87000020;
+	02E  :   00230000;
+	02F  :   00000000;
+	030  :   03500001;
+	[031..032]  :   00000000;
+	033  :   02600001;
+	[034..037]  :   00000000;
+	038  :   80000030;
+	[039..03F]  :   00000000;
+	040  :   0F345000;
+	041  :   0F234000;
+	042  :   0F135000;
+	043  :   0F633000;
+	044  :   0F711000;
+	045  :   87000040;
+	[046..04F]  :   00000000;
+	050  :   0F100000;
+	051  :   0F200005;
+	052  :   0F110001;
+	053  :   47101000;
+	054  :   87012058;
+	[055..056]  :   00000000;
+	057  :   87000052;
+	[058..0FF]  :   00000000;
+END;

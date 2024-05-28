@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "command[0]",
+					"strict" : false
+				},
+				{
+					"name" : "command[1]",
+					"strict" : false
+				},
+				{
+					"name" : "command[2]",
+					"strict" : false
+				},
+				{
+					"name" : "command[3]",
+					"strict" : false
+				},
+				{
+					"name" : "command[4]",
+					"strict" : false
+				},
+				{
+					"name" : "command[5]",
+					"strict" : false
+				},
+				{
+					"name" : "command[6]",
+					"strict" : false
+				},
+				{
+					"name" : "command[7]",
+					"strict" : false
+				},
+				{
+					"name" : "command[8]",
+					"strict" : false
+				},
+				{
+					"name" : "command[9]",
+					"strict" : false
+				},
+				{
+					"name" : "command[10]",
+					"strict" : false
+				},
+				{
+					"name" : "command[11]",
+					"strict" : false
+				},
+				{
+					"name" : "command[12]",
+					"strict" : false
+				},
+				{
+					"name" : "command[13]",
+					"strict" : false
+				},
+				{
+					"name" : "command[14]",
+					"strict" : false
+				},
+				{
+					"name" : "command[15]",
+					"strict" : false
+				},
+				{
+					"name" : "command[16]",
+					"strict" : false
+				},
+				{
+					"name" : "command[17]",
+					"strict" : false
+				},
+				{
+					"name" : "command[18]",
+					"strict" : false
+				},
+				{
+					"name" : "command[19]",
+					"strict" : false
+				},
+				{
+					"name" : "command[20]",
+					"strict" : false
+				},
+				{
+					"name" : "command[21]",
+					"strict" : false
+				},
+				{
+					"name" : "command[22]",
+					"strict" : false
+				},
+				{
+					"name" : "command[23]",
+					"strict" : false
+				},
+				{
+					"name" : "command[24]",
+					"strict" : false
+				},
+				{
+					"name" : "command[25]",
+					"strict" : false
+				},
+				{
+					"name" : "command[26]",
+					"strict" : false
+				},
+				{
+					"name" : "command[27]",
+					"strict" : false
+				},
+				{
+					"name" : "command[28]",
+					"strict" : false
+				},
+				{
+					"name" : "command[29]",
+					"strict" : false
+				},
+				{
+					"name" : "command[30]",
+					"strict" : false
+				},
+				{
+					"name" : "command[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

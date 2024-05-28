@@ -1,0 +1,179 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusProject/mips_32/mips_32/simulation/modelsim
+vcpu
+Z1 !s110 1622730754
+!i10b 1
+!s100 4EjTNoeREVn3NZG[n3dIf3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=aHn2dY=0RZi_1n?jhL:63
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1622725018
+8D:/QuartusProject/mips_32/mips_32/cpu.v
+FD:/QuartusProject/mips_32/mips_32/cpu.v
+!i122 4
+L0 1 314
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1622730753.000000
+!s107 D:/QuartusProject/mips_32/mips_32/cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/mips_32/mips_32|D:/QuartusProject/mips_32/mips_32/cpu.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/QuartusProject/mips_32/mips_32
+Z8 tCvgOpt 0
+vdata
+Z9 !s110 1622730753
+!i10b 1
+!s100 clLIEjRcQ650dnbPmg6Vd1
+R2
+I`gf<>DjB9lWi2gP8ObJ2`1
+R3
+R0
+w1622575211
+8D:/QuartusProject/mips_32/mips_32/data.v
+FD:/QuartusProject/mips_32/mips_32/data.v
+!i122 3
+L0 40 82
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QuartusProject/mips_32/mips_32/data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/mips_32/mips_32|D:/QuartusProject/mips_32/mips_32/data.v|
+!i113 1
+R6
+R7
+R8
+vinctructions
+R9
+!i10b 1
+!s100 _B4d20Y:_EEWQEDi@4LQG1
+R2
+IMo<FCiH3P03f>FjUje_D02
+R3
+R0
+w1622575204
+8D:/QuartusProject/mips_32/mips_32/inctructions.v
+FD:/QuartusProject/mips_32/mips_32/inctructions.v
+!i122 2
+L0 40 79
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QuartusProject/mips_32/mips_32/inctructions.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/mips_32/mips_32|D:/QuartusProject/mips_32/mips_32/inctructions.v|
+!i113 1
+R6
+R7
+R8
+vmips_8_v1
+R9
+!i10b 1
+!s100 D_aGF@b:C3@a]ILL]e7YO0
+R2
+IzjRbMYH<J2V?;i4B10PZK1
+R3
+R0
+w1622576912
+8D:/QuartusProject/mips_32/mips_32/mips_8_v1.v
+FD:/QuartusProject/mips_32/mips_32/mips_8_v1.v
+!i122 1
+L0 1 63
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QuartusProject/mips_32/mips_32/mips_8_v1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/mips_32/mips_32|D:/QuartusProject/mips_32/mips_32/mips_8_v1.v|
+!i113 1
+R6
+R7
+R8
+vport_ram1
+R1
+!i10b 1
+!s100 Ui:6ZSRF>^h=O13VRjdBP2
+R2
+ImI40jI`QKCFQi84e]C6ja3
+R3
+R0
+w1622575223
+8D:/QuartusProject/mips_32/mips_32/port_ram1.v
+FD:/QuartusProject/mips_32/mips_32/port_ram1.v
+!i122 5
+L0 40 87
+R4
+r1
+!s85 0
+31
+Z10 !s108 1622730754.000000
+!s107 D:/QuartusProject/mips_32/mips_32/port_ram1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/mips_32/mips_32|D:/QuartusProject/mips_32/mips_32/port_ram1.v|
+!i113 1
+R6
+R7
+R8
+vreg_file_ram
+R9
+!i10b 1
+!s100 Lg3QT9h;6e;2cZgKkABWK2
+R2
+Ie54aL]mhiQoV4A]d4M0_[0
+R3
+R0
+w1622153785
+8D:/QuartusProject/mips_32/mips_32/reg_file_ram.v
+FD:/QuartusProject/mips_32/mips_32/reg_file_ram.v
+!i122 0
+L0 1 36
+R4
+r1
+!s85 0
+31
+!s108 1622730752.000000
+!s107 D:/QuartusProject/mips_32/mips_32/reg_file_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/mips_32/mips_32|D:/QuartusProject/mips_32/mips_32/reg_file_ram.v|
+!i113 1
+R6
+R7
+R8
+vtb_ram_file
+R1
+!i10b 1
+!s100 =YS9EB9^Wl_9z5KJDF26H3
+R2
+IoZPlDSG=Z]mm>eY@Gb24U0
+R3
+R0
+w1622577526
+8D:/QuartusProject/mips_32/mips_32/tb_ram_file.v
+FD:/QuartusProject/mips_32/mips_32/tb_ram_file.v
+!i122 6
+L0 2 23
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/QuartusProject/mips_32/mips_32/tb_ram_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusProject/mips_32/mips_32|D:/QuartusProject/mips_32/mips_32/tb_ram_file.v|
+!i113 1
+R6
+R7
+R8

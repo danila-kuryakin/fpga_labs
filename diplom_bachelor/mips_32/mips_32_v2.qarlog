@@ -1,0 +1,31 @@
+Quartus Prime Archive log --	D:/QuartusProject/mips_32/mips_32_v2.qarlog
+
+Archive:	D:/QuartusProject/mips_32/mips_32_v2.qar
+Date:		Mon Jul 05 14:48:19 2021
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/QuartusProject/mips_32/cpu.v
+D:/QuartusProject/mips_32/data.qip
+D:/QuartusProject/mips_32/data.v
+D:/QuartusProject/mips_32/data_32.mif
+D:/QuartusProject/mips_32/db/stp1_auto_stripped.stp
+D:/QuartusProject/mips_32/inctructions.qip
+D:/QuartusProject/mips_32/inctructions.v
+D:/QuartusProject/mips_32/instructions.mif
+D:/QuartusProject/mips_32/mips_32.qpf
+D:/QuartusProject/mips_32/mips_32.qsf
+D:/QuartusProject/mips_32/mips_32.sdc
+D:/QuartusProject/mips_32/mips_32.v
+D:/QuartusProject/mips_32/port_ram1.qip
+D:/QuartusProject/mips_32/port_ram1.v
+D:/QuartusProject/mips_32/reg_file_ram.v
+D:/QuartusProject/mips_32/reg_file_ram_32.hex
+D:/QuartusProject/mips_32/stp1.stp
+D:/QuartusProject/mips_32/tb_mips_32.do
+D:/QuartusProject/mips_32/tb_mips_32.v
+d:/program/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

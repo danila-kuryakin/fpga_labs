@@ -1,0 +1,4 @@
+create_clock -name clk -period 40.000 [get_ports clk]
+create_clock -name altera_reserved_tck -period 10.000 [get_ports altera_reserved_tck]
+derive_pll_clocks -create_base_clocks
+derive_clock_uncertainty
